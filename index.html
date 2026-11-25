@@ -349,8 +349,8 @@
     <div class="contact-grid">
       <div>
         <!-- FORMULAIRE DEVIS — remplacez VOTRE_ID par votre identifiant Formspree (voir LISEZMOI.txt) -->
-        <form class="form-panel active" id="devis" action="https://formsubmit.co/ajax/direction@lesbureauticiens.com" method="POST">
-          <input type="hidden" name="_subject" value="Nouvelle demande de devis — site web"><input type="hidden" name="_template" value="table"><input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+        <form class="form-panel active" id="devis" action="envoi.php" method="POST">
+          <input type="hidden" name="_subject" value="Nouvelle demande de devis — site web"><input type="hidden" name="_type" value="devis"><input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
           <div class="row">
             <div class="field"><label for="d-nom">Nom complet *</label><input id="d-nom" name="nom" required></div>
             <div class="field"><label for="d-soc">Société</label><input id="d-soc" name="societe"></div>
@@ -379,8 +379,8 @@
         </form>
 
         <!-- FORMULAIRE RENDEZ-VOUS -->
-        <form class="form-panel" id="rdv" action="https://formsubmit.co/ajax/direction@lesbureauticiens.com" method="POST">
-          <input type="hidden" name="_subject" value="Nouvelle demande de rendez-vous — site web"><input type="hidden" name="_template" value="table"><input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+        <form class="form-panel" id="rdv" action="envoi.php" method="POST">
+          <input type="hidden" name="_subject" value="Nouvelle demande de rendez-vous — site web"><input type="hidden" name="_type" value="rdv"><input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
           <div class="row">
             <div class="field"><label for="r-nom">Nom complet *</label><input id="r-nom" name="nom" required></div>
             <div class="field"><label for="r-soc">Société</label><input id="r-soc" name="societe"></div>
@@ -457,7 +457,7 @@ document.querySelectorAll('form').forEach(f=>f.addEventListener('submit',async e
   const btn=f.querySelector('button');btn.disabled=true;btn.textContent='Envoi…';
   try{
     const r=await fetch(f.action,{method:'POST',body:new FormData(f),headers:{Accept:'application/json'}});
-    if(!r.ok)throw 0;
+    if(!r.ok||(await r.json()).ok!==true)throw 0;
     f.reset();f.querySelector('.form-ok').style.display='block';btn.textContent='Envoyé ✓';
   }catch(_){btn.disabled=false;btn.textContent='Réessayer';alert("L'envoi a échoué. Appelez-nous au 01 43 42 41 92 ou écrivez à direction@lesbureauticiens.com.");}
 }));
