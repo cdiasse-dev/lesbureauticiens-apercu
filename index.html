@@ -1,354 +1,471 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Les Bureauticiens — Sécurité, téléphonie, informatique et impression à Paris</title>
-<meta name="description" content="Sécurité, téléphonie et réseau, informatique, multimédia, impression, point de vente et communication pour les professionnels à Paris. Un seul interlocuteur. Devis gratuit sous 24h.">
-<meta name="theme-color" content="#ffffff">
-<link rel="icon" type="image/png" href="assets/logo-mark-sm.png">
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Les Bureauticiens — Solutions numériques pour les professionnels | Paris</title>
+<meta name="description" content="Bureautique, informatique, téléphonie et sécurité : Les Bureauticiens équipent les entreprises en achat, location et maintenance. Devis gratuit sous 24h. Paris 12e.">
+<link rel="icon" href="assets/logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:wght@400;700&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><symbol id="i-print" viewBox="0 0 24 24"><path d="M7 8V4h10v4M7 17H5a2 2 0 0 1-2-2v-4a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2h-2M7 14h10v6H7z"/></symbol><symbol id="i-it" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></symbol><symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></symbol><symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M9 12l2 2 4-4"/></symbol><symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7"/></symbol><symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol><symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol><symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-11a7 7 0 0 0-14 0c0 4.8 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></symbol><symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></symbol><symbol id="i-cam" viewBox="0 0 24 24"><path d="M4 5h16M6 5v3a6 6 0 0 0 12 0V5"/><circle cx="12" cy="9" r="2"/><path d="M12 14v5M9 19h6"/></symbol><symbol id="i-alarm" viewBox="0 0 24 24"><path d="M6 16v-5a6 6 0 0 1 12 0v5l2 2H4z"/><path d="M10 21h4"/></symbol><symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></symbol><symbol id="i-screen" viewBox="0 0 24 24"><rect x="7" y="2" width="10" height="16" rx="1.5"/><path d="M9 22h6M12 18v4"/></symbol><symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M3 20c0-3 2.7-5 6-5s6 2 6 5"/><path d="M16 5a3 3 0 0 1 0 6M18 15c2 .6 3 2.3 3 5"/></symbol><symbol id="i-wifi" viewBox="0 0 24 24"><path d="M3 9a14 14 0 0 1 18 0M6 12.5a9 9 0 0 1 12 0M9 16a4.5 4.5 0 0 1 6 0"/><path d="M12 19.5h.01"/></symbol><symbol id="i-mobile" viewBox="0 0 24 24"><rect x="7" y="2" width="10" height="20" rx="2.5"/><path d="M11 18h2"/></symbol><symbol id="i-cash" viewBox="0 0 24 24"><rect x="4" y="12" width="16" height="8" rx="1.5"/><path d="M7 12V5h7v7M9.5 8h2M17 16h.01"/></symbol><symbol id="i-plot" viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="6" rx="1.5"/><path d="M7 12v8h10v-8M5 20h14"/></symbol><symbol id="i-cable" viewBox="0 0 24 24"><path d="M9 3v5M15 3v5M7 8h10v4a5 5 0 0 1-10 0zM12 17v4"/></symbol><symbol id="i-cloud" viewBox="0 0 24 24"><path d="M7 18a4 4 0 0 1-.6-7.96A6 6 0 0 1 18 9.5a4.25 4.25 0 0 1-.5 8.5z"/></symbol><symbol id="i-doc" viewBox="0 0 24 24"><path d="M7 3h7l4 4v14H7z"/><path d="M14 3v4h4M10 12h5M10 16h5"/></symbol><symbol id="i-kiosk" viewBox="0 0 24 24"><rect x="7" y="2" width="10" height="13" rx="1.5"/><path d="M10 15v6M14 15v6M7 21h10M10.5 6h3M10.5 9h3"/></symbol><symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.8 3 2.8 15 0 18M12 3c-2.8 3-2.8 15 0 18"/></symbol><symbol id="i-share" viewBox="0 0 24 24"><circle cx="6" cy="12" r="2.5"/><circle cx="17" cy="6" r="2.5"/><circle cx="17" cy="18" r="2.5"/><path d="M8.2 10.8l6.6-3.6M8.2 13.2l6.6 3.6"/></symbol><symbol id="i-chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></symbol><symbol id="i-server" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="7" rx="1.5"/><rect x="3" y="13" width="18" height="7" rx="1.5"/><path d="M7 7.5h.01M7 16.5h.01"/></symbol></defs></svg>
-<header class="nav" id="nav">
-  <div class="wrap nav-in">
-    <a href="#top" class="logo" aria-label="Les Bureauticiens — accueil">
-      <img src="assets/logo-mark-sm.png" alt="" width="33" height="36">
-      <img src="assets/logo-wordmark-sm.png" alt="Les Bureauticiens" width="150" height="28" class="logo-word">
-    </a>
-    <nav class="nav-links" id="navLinks" aria-label="Navigation principale">
-      <div class="menu" id="menu">
-        <button type="button" class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="menuPanel">Nos métiers <svg class="ic" aria-hidden="true"><use href="#i-chev"/></svg></button>
-        <div class="menu-panel" id="menuPanel"><a href="securite.html"><svg class="ic" aria-hidden="true"><use href="#i-shield"/></svg><span><b data-cms="metiers.0.menu">Sécurité des biens et des personnes</b><small data-cms="metiers.0.court">Vidéosurveillance, alarme, contrôle d'accès</small></span></a><a href="telephonie.html"><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg><span><b data-cms="metiers.1.menu">Téléphonie, d'entreprise &amp; Câblage</b><small data-cms="metiers.1.court">Standard, fibre, wifi, câblage</small></span></a><a href="informatique.html"><svg class="ic" aria-hidden="true"><use href="#i-it"/></svg><span><b data-cms="metiers.2.menu">Solutions IT</b><small data-cms="metiers.2.court">Informatique, infogérance, cybersécurité</small></span></a><a href="multimedia.html"><svg class="ic" aria-hidden="true"><use href="#i-screen"/></svg><span><b data-cms="metiers.3.menu">Multimédia</b><small data-cms="metiers.3.court">Écrans interactifs, affichage dynamique</small></span></a><a href="impression.html"><svg class="ic" aria-hidden="true"><use href="#i-print"/></svg><span><b data-cms="metiers.4.menu">Impression &amp; GED</b><small data-cms="metiers.4.court">Photocopieurs, traceurs, GED</small></span></a><a href="point-de-vente.html"><svg class="ic" aria-hidden="true"><use href="#i-cash"/></svg><span><b data-cms="metiers.5.menu">Équipement Point de vente</b><small data-cms="metiers.5.court">Caisses, bornes de commande</small></span></a><a href="communication.html"><svg class="ic" aria-hidden="true"><use href="#i-globe"/></svg><span><b data-cms="metiers.6.menu">Communication</b><small data-cms="metiers.6.court">Site internet, réseaux sociaux</small></span></a></div>
-      </div>
-      <a href="#formules">Formules</a><a href="#avis">Avis clients</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <div class="nav-cta">
-      <a class="nav-tel" href="tel:+33143424192" aria-label="Appeler le 01 43 42 41 92"><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg><span>01 43 42 41 92</span></a>
-      <a class="btn btn-primary btn-sm" href="#devis">Devis gratuit</a>
-      <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="navLinks"><span></span><span></span></button>
-    </div>
+
+<header>
+  <div class="container nav">
+    <a href="index.html"><img src="assets/logo-texte.png" alt="Les Bureauticiens — Solutions numériques" class="logo-texte"></a>
+    <button class="search-btn" type="button" aria-label="Rechercher sur le site" title="Rechercher (Ctrl+K)"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><span class="tw-wrap"><span class="tw-label">Rechercher :</span> <span class="tw"></span></span></button>
+    <button class="burger" aria-label="Menu" onclick="document.querySelector('.nav>ul').classList.toggle('open')">☰</button>
+    <ul>
+      <li class="has-drop has-mega"><a href="index.html#solutions">Nos solutions</a>
+        <div class="megamenu">
+<div class="mcol"><a class="mcat" href="securite.html">Sécurité des biens et des personnes</a><a href="videosurveillance.html">Vidéosurveillance</a><a href="alarme-intrusion.html">Alarme intrusion</a><a href="controle-acces.html">Contrôle d'accès</a></div>
+<div class="mcol"><a class="mcat" href="telephonie-reseaux.html">Téléphonie, réseau d'entreprise &amp; câblage</a><a href="postes-fixes.html">Postes fixes</a><a href="postes-mobiles.html">Postes mobiles</a><a href="accueil-telephonique.html">Accueil téléphonique</a><a href="application-mobile.html">Application mobile</a><a href="acces-internet.html">Accès internet</a><a href="bornes-wifi.html">Bornes Wi-Fi</a><a href="cablage.html">Câblage réseau</a></div>
+<div class="mcol"><a class="mcat" href="solutions-it.html">Solutions IT</a><a href="postes-informatiques.html">Postes fixes &amp; portables</a><a href="serveurs.html">Serveurs &amp; stockage</a><a href="cybersecurite.html">Firewall &amp; antivirus</a><a href="onduleurs.html">Onduleurs</a><a href="microsoft-365.html">Microsoft 365 &amp; OneDrive</a><a href="infogerance.html">Infogérance</a></div>
+<div class="mcol"><a class="mcat" href="multimedia.html">Multimédia</a><a href="ecrans-interactifs.html">Écrans interactifs &amp; collaboratifs</a><a href="ecrans-accueil.html">Écrans d'accueil</a><a href="affichage-dynamique.html">Affichage dynamique</a></div>
+<div class="mcol"><a class="mcat" href="impression-ged.html">Impression &amp; GED</a><a href="photocopieurs.html">Photocopieurs A4 / A3</a><a href="traceurs.html">Traceurs multifonctions</a><a href="ged.html">Gestion électronique de documents</a><a href="contrat-maintenance-impression.html">Contrat de maintenance impression</a></div>
+<div class="mcol"><a class="mcat" href="point-de-vente.html">Équipements point de vente</a><a href="caisse-enregistreuse.html">Caisse enregistreuse</a><a href="borne-de-commande.html">Borne de commande</a><a href="ecrans-point-de-vente.html">Écrans clients &amp; cuisine</a><a href="logiciel-de-caisse.html">Logiciel de gestion</a><a href="tiroir-caisse.html">Tiroir-caisse &amp; périphériques</a><a href="impression-tickets.html">Impression de tickets</a></div>
+<div class="mcol"><a class="mcat" href="communication.html">Communication</a><a href="site-internet.html">Site internet</a><a href="reseaux-sociaux.html">Réseaux sociaux</a></div>
+        </div>
+      </li>
+      <li class="has-drop"><a href="index.html#offres">Nos formules</a><ul class="dropdown"><li><a href="achat.html">Achat</a></li><li><a href="location.html">Location</a></li><li><a href="maintenance.html">Maintenance</a></li></ul></li>
+      <li><a href="nos-installations.html">Nos installations</a></li>
+      <li><a href="index.html#apropos">Qui sommes-nous</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+      <li><a href="index.html#contact" class="btn btn-primary" data-tab="devis">Demander un devis</a></li>
+    </ul>
   </div>
 </header>
-<main id="top">
 
-<section class="hero">
-  <div class="wrap hero-grid">
-    <div class="hero-copy">
-      <p class="kicker" data-cms="accueil.hero.surtitre">Achat / Location / Maintenance</p>
-      <h1 data-cms="accueil.hero.titre">Tout l'équipement de votre entreprise. <em>Un seul interlocuteur.</em></h1>
-      <p class="lead" data-cms="accueil.hero.texte" data-cms-multi>Sécurité, téléphonie, informatique, impression, écrans, caisses : depuis Paris, Les Bureauticiens auditent, installent et entretiennent vos équipements professionnels.</p>
+<div class="topband">Achat <b>/</b> Location <b>/</b> Maintenance</div>
+<section class="hero" id="accueil">
+  <video class="hero-video" autoplay muted loop playsinline preload="auto" poster="https://images.pexels.com/videos/6804123/pexels-photo-6804123.jpeg?w=1280"><source src="https://videos.pexels.com/video-files/6804123/6804123-hd_1366_720_25fps.mp4" type="video/mp4"></video>
+  <div class="hero-veil"></div>
+  <img class="lb-fond" src="assets/lb-grand.png" alt="" aria-hidden="true">
+  <div class="container hero-grid">
+    <div>
+      <span class="tag">Solutions numériques · Paris</span>
+      <h1>Tous les équipements de votre entreprise en <span>1 seul interlocuteur</span></h1>
+      <p class="lead">Sécurité, téléphonie, informatique, multimédia, impression, point de vente et communication : nous équipons, connectons et protégeons votre entreprise, du conseil jusqu'au suivi.</p>
+      <button class="search-btn hero-search" type="button" aria-label="Rechercher une solution"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><span class="tw-wrap"><span class="tw-label">Je cherche</span> <span class="tw"></span></span><span class="hs-go">Rechercher</span></button>
       <div class="hero-actions">
-        <a class="btn btn-primary btn-lg" href="#devis"><span data-cms="accueil.hero.bouton">Demander un devis gratuit</span> <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a>
-        <a class="btn btn-ghost btn-lg" href="tel:+33143424192"><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg>01 43 42 41 92</a>
+        <a href="#contact" class="btn btn-primary" data-tab="devis">Obtenir mon devis gratuit</a>
+        <a href="#contact" class="btn btn-outline" data-tab="rdv">Prendre rendez-vous</a>
       </div>
-      <a class="rating" href="#avis"><span class="stars" role="img" aria-label="5 étoiles sur 5"><svg class="star" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8L1.6 7.7l5.8-.8z"/></svg><svg class="star" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8L1.6 7.7l5.8-.8z"/></svg><svg class="star" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8L1.6 7.7l5.8-.8z"/></svg><svg class="star" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8L1.6 7.7l5.8-.8z"/></svg><svg class="star" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8L1.6 7.7l5.8-.8z"/></svg></span><span><b>5,0</b> sur Google · 8 avis clients</span></a>
     </div>
-    <div class="honeycomb" aria-hidden="true">
-      <img class="honey-mark" src="assets/logo-mark-sm.png" alt="">
-      <svg class="hex h-a" viewBox="0 0 300 266" aria-hidden="true" data-cms-photo="accueil.hexagones.0"><defs><clipPath id="hx1"><polygon points="77,7 223,7 296,133 223,259 77,259 4,133"/></clipPath></defs><image href="assets/photos/accueil-tel.jpg" width="300" height="266" preserveAspectRatio="xMidYMid slice" clip-path="url(#hx1)"/><polygon class="hex-frame" points="77,7 223,7 296,133 223,259 77,259 4,133"/></svg><svg class="hex h-b" viewBox="0 0 300 266" aria-hidden="true" data-cms-photo="accueil.hexagones.1"><defs><clipPath id="hx2"><polygon points="77,7 223,7 296,133 223,259 77,259 4,133"/></clipPath></defs><image href="assets/photos/reunion.jpg" width="300" height="266" preserveAspectRatio="xMidYMid slice" clip-path="url(#hx2)"/><polygon class="hex-frame" points="77,7 223,7 296,133 223,259 77,259 4,133"/></svg><svg class="hex h-c" viewBox="0 0 300 266" aria-hidden="true" data-cms-photo="accueil.hexagones.2"><defs><clipPath id="hx3"><polygon points="77,7 223,7 296,133 223,259 77,259 4,133"/></clipPath></defs><image href="assets/photos/bureau-it.jpg" width="300" height="266" preserveAspectRatio="xMidYMid slice" clip-path="url(#hx3)"/><polygon class="hex-frame" points="77,7 223,7 296,133 223,259 77,259 4,133"/></svg><svg class="hex h-d" viewBox="0 0 300 266" aria-hidden="true" data-cms-photo="accueil.hexagones.3"><defs><clipPath id="hx4"><polygon points="77,7 223,7 296,133 223,259 77,259 4,133"/></clipPath></defs><image href="assets/photos/web.jpg" width="300" height="266" preserveAspectRatio="xMidYMid slice" clip-path="url(#hx4)"/><polygon class="hex-frame" points="77,7 223,7 296,133 223,259 77,259 4,133"/></svg><svg class="hex h-e" viewBox="0 0 300 266" aria-hidden="true" data-cms-photo="accueil.hexagones.4"><defs><clipPath id="hx5"><polygon points="77,7 223,7 296,133 223,259 77,259 4,133"/></clipPath></defs><image href="assets/photos/caisse.jpg" width="300" height="266" preserveAspectRatio="xMidYMid slice" clip-path="url(#hx5)"/><polygon class="hex-frame" points="77,7 223,7 296,133 223,259 77,259 4,133"/></svg><svg class="hex h-f" viewBox="0 0 300 266" aria-hidden="true" data-cms-photo="accueil.hexagones.5"><defs><clipPath id="hx6"><polygon points="77,7 223,7 296,133 223,259 77,259 4,133"/></clipPath></defs><image href="assets/photos/copieur.jpg" width="300" height="266" preserveAspectRatio="xMidYMid slice" clip-path="url(#hx6)"/><polygon class="hex-frame" points="77,7 223,7 296,133 223,259 77,259 4,133"/></svg><svg class="hex h-g" viewBox="0 0 300 266" aria-hidden="true" data-cms-photo="accueil.hexagones.6"><defs><clipPath id="hx7"><polygon points="77,7 223,7 296,133 223,259 77,259 4,133"/></clipPath></defs><image href="assets/photos/camera.jpg" width="300" height="266" preserveAspectRatio="xMidYMid slice" clip-path="url(#hx7)"/><polygon class="hex-frame" points="77,7 223,7 296,133 223,259 77,259 4,133"/></svg>
+    <div class="reveal">
+      <div class="hexes" aria-label="Nos domaines d'expertise">
+        <div class="orbits" aria-hidden="true"><span class="glow"></span><span class="ring r1"><i></i></span><span class="ring r2"><i></i><i></i></span><span class="ring r3"></span></div>
+        <div class="hex-wrap s1"><a href="solutions-it.html" class="hex"><img src="assets/bulle-it.jpg" alt="Solutions IT"></a><a href="solutions-it.html" class="hex-label">Solutions IT</a><div class="hex-menu"><a href="postes-informatiques.html">Postes fixes &amp; portables</a><a href="serveurs.html">Serveurs &amp; stockage</a><a href="cybersecurite.html">Firewall &amp; antivirus</a><a href="onduleurs.html">Onduleurs</a><a href="microsoft-365.html">Microsoft 365 &amp; OneDrive</a><a href="infogerance.html">Infogérance</a></div></div>
+        <div class="hex-wrap s2"><a href="telephonie-reseaux.html" class="hex"><img src="assets/bulle-telephonie.jpg" alt="Téléphonie, réseau d'entreprise &amp; câblage"></a><a href="telephonie-reseaux.html" class="hex-label">Téléphonie &amp; Réseaux</a><div class="hex-menu"><a href="postes-fixes.html">Postes fixes</a><a href="postes-mobiles.html">Postes mobiles</a><a href="accueil-telephonique.html">Accueil téléphonique</a><a href="application-mobile.html">Application mobile</a><a href="acces-internet.html">Accès internet</a><a href="bornes-wifi.html">Bornes Wi-Fi</a><a href="cablage.html">Câblage réseau</a></div></div>
+        <div class="hex-wrap s3"><a href="impression-ged.html" class="hex"><img src="assets/bulle-impression.jpg" alt="Impression &amp; GED"></a><a href="impression-ged.html" class="hex-label">Impression &amp; GED</a><div class="hex-menu"><a href="photocopieurs.html">Photocopieurs A4 / A3</a><a href="traceurs.html">Traceurs multifonctions</a><a href="ged.html">Gestion électronique de documents</a><a href="contrat-maintenance-impression.html">Contrat de maintenance impression</a></div></div>
+        <div class="hex-wrap s4"><a href="multimedia.html" class="hex"><img src="assets/bulle-multimedia.jpg" alt="Multimédia"></a><a href="multimedia.html" class="hex-label">Multimédia</a><div class="hex-menu"><a href="ecrans-interactifs.html">Écrans interactifs &amp; collaboratifs</a><a href="ecrans-accueil.html">Écrans d'accueil</a><a href="affichage-dynamique.html">Affichage dynamique</a></div></div>
+        <div class="hex-wrap s5"><a href="securite.html" class="hex"><img src="assets/bulle-securite.jpg" alt="Sécurité des biens et des personnes"></a><a href="securite.html" class="hex-label">Sécurité</a><div class="hex-menu"><a href="videosurveillance.html">Vidéosurveillance</a><a href="alarme-intrusion.html">Alarme intrusion</a><a href="controle-acces.html">Contrôle d'accès</a></div></div>
+        <div class="hex-wrap s6"><a href="point-de-vente.html" class="hex"><img src="https://images.unsplash.com/photo-1647427017067-8f33ccbae493?auto=format&fit=crop&w=500&h=440&q=75" alt="Équipements point de vente"></a><a href="point-de-vente.html" class="hex-label">Matériel point de vente</a><div class="hex-menu"><a href="caisse-enregistreuse.html">Caisse enregistreuse</a><a href="borne-de-commande.html">Borne de commande</a><a href="ecrans-point-de-vente.html">Écrans clients &amp; cuisine</a><a href="logiciel-de-caisse.html">Logiciel de gestion</a><a href="tiroir-caisse.html">Tiroir-caisse &amp; périphériques</a><a href="impression-tickets.html">Impression de tickets</a></div></div>
+        <div class="hex-wrap s0"><a href="communication.html" class="hex"><img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?auto=format&fit=crop&w=600&h=520&q=75" alt="Communication"></a><a href="communication.html" class="hex-label">Communication</a><div class="hex-menu"><a href="site-internet.html">Site internet</a><a href="reseaux-sociaux.html">Réseaux sociaux</a></div></div>
+
+      </div>      <p class="slogan">Votre partenaire de confiance !</p>
     </div>
   </div>
 </section>
-
-<section class="proof" aria-label="Nos engagements">
-  <div class="wrap proof-grid"><div><b data-cms="accueil.preuves.0.chiffre">10+ ans</b><span data-cms="accueil.preuves.0.texte">d'expertise terrain auprès des entreprises</span></div><div><b data-cms="accueil.preuves.1.chiffre">24h</b><span data-cms="accueil.preuves.1.texte">pour répondre et pour intervenir</span></div><div><b data-cms="accueil.preuves.2.chiffre">1 seul</b><span data-cms="accueil.preuves.2.texte">interlocuteur pour tous vos équipements</span></div><div><b data-cms="accueil.preuves.3.chiffre">5,0 / 5</b><span data-cms="accueil.preuves.3.texte">de moyenne sur Google</span></div></div>
-</section>
-
-<section class="section" id="solutions">
-  <div class="wrap">
-    <div class="section-head  reveal">
-      <p class="kicker" data-cms="accueil.solutions.surtitre">Nos solutions</p>
-      <h2 data-cms="accueil.solutions.titre">Sept métiers, <em>une seule équipe.</em></h2>
-      <p data-cms="accueil.solutions.texte" data-cms-multi>Chaque domaine a sa page détaillée et son devis en trois questions.</p>
+<section id="solutions">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="tag">Nos solutions</span>
+      <h2>7 expertises, <span>un seul interlocuteur</span></h2>
+      <p>Cliquez sur une catégorie pour découvrir le détail de nos solutions.</p>
     </div>
-    <div class="sols"><a class="sol reveal" href="securite.html">
-        <svg class="hex sol-hex" viewBox="0 0 300 266" aria-hidden="true" data-cms-photo="metiers.0.photo"><defs><clipPath id="hx8"><polygon points="77,7 223,7 296,133 223,259 77,259 4,133"/></clipPath></defs><image href="assets/photos/camera.jpg" width="300" height="266" preserveAspectRatio="xMidYMid slice" clip-path="url(#hx8)"/><polygon class="hex-frame" points="77,7 223,7 296,133 223,259 77,259 4,133"/></svg>
-        <div class="sol-body">
-          <h3 data-cms="metiers.0.menu">Sécurité des biens et des personnes</h3>
-          <p data-cms="metiers.0.resume" data-cms-multi>Vidéosurveillance, alarme intrusion et contrôle d'accès : des dispositifs de dernière génération, pilotés depuis votre mobile.</p>
-          <ul><li data-cms="metiers.0.prestations.0.titre">Vidéosurveillance</li><li data-cms="metiers.0.prestations.1.titre">Alarme intrusion</li><li data-cms="metiers.0.prestations.2.titre">Contrôle d'accès</li></ul>
-          <span class="link-arrow">Découvrir <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></span>
-        </div>
-      </a><a class="sol reveal" href="telephonie.html">
-        <svg class="hex sol-hex" viewBox="0 0 300 266" aria-hidden="true" data-cms-photo="metiers.1.photo"><defs><clipPath id="hx9"><polygon points="77,7 223,7 296,133 223,259 77,259 4,133"/></clipPath></defs><image href="assets/photos/accueil-tel.jpg" width="300" height="266" preserveAspectRatio="xMidYMid slice" clip-path="url(#hx9)"/><polygon class="hex-frame" points="77,7 223,7 296,133 223,259 77,259 4,133"/></svg>
-        <div class="sol-body">
-          <h3 data-cms="metiers.1.menu">Téléphonie, d'entreprise &amp; Câblage</h3>
-          <p data-cms="metiers.1.resume" data-cms-multi>Standard Centrex IP ou IPBX / PABX, postes, accès internet, wifi et câblage : nous installons toute la chaîne, de la prise murale au combiné.</p>
-          <ul><li data-cms="metiers.1.prestations.0.titre">Standard téléphonique</li><li data-cms="metiers.1.prestations.1.titre">Postes &amp; mobilité</li><li data-cms="metiers.1.prestations.2.titre">Réseau d'entreprise</li><li data-cms="metiers.1.prestations.3.titre">Câblage</li></ul>
-          <span class="link-arrow">Découvrir <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></span>
-        </div>
-      </a><a class="sol reveal" href="informatique.html">
-        <svg class="hex sol-hex" viewBox="0 0 300 266" aria-hidden="true" data-cms-photo="metiers.2.photo"><defs><clipPath id="hx10"><polygon points="77,7 223,7 296,133 223,259 77,259 4,133"/></clipPath></defs><image href="assets/photos/bureau-it.jpg" width="300" height="266" preserveAspectRatio="xMidYMid slice" clip-path="url(#hx10)"/><polygon class="hex-frame" points="77,7 223,7 296,133 223,259 77,259 4,133"/></svg>
-        <div class="sol-body">
-          <h3 data-cms="metiers.2.menu">Solutions IT</h3>
-          <p data-cms="metiers.2.resume" data-cms-multi>Informatique, infogérance et cybersécurité : nous équipons vos postes, protégeons vos données et gérons votre parc au quotidien.</p>
-          <ul><li data-cms="metiers.2.prestations.0.titre">Informatique</li><li data-cms="metiers.2.prestations.1.titre">Infogérance</li><li data-cms="metiers.2.prestations.2.titre">Cybersécurité</li><li data-cms="metiers.2.prestations.3.titre">Microsoft 365</li></ul>
-          <span class="link-arrow">Découvrir <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></span>
-        </div>
-      </a><a class="sol reveal" href="multimedia.html">
-        <svg class="hex sol-hex" viewBox="0 0 300 266" aria-hidden="true" data-cms-photo="metiers.3.photo"><defs><clipPath id="hx11"><polygon points="77,7 223,7 296,133 223,259 77,259 4,133"/></clipPath></defs><image href="assets/photos/reunion.jpg" width="300" height="266" preserveAspectRatio="xMidYMid slice" clip-path="url(#hx11)"/><polygon class="hex-frame" points="77,7 223,7 296,133 223,259 77,259 4,133"/></svg>
-        <div class="sol-body">
-          <h3 data-cms="metiers.3.menu">Multimédia</h3>
-          <p data-cms="metiers.3.resume" data-cms-multi>Écrans interactifs pour vos réunions, écrans d'accueil et affichage dynamique : vos messages s'affichent au bon endroit.</p>
-          <ul><li data-cms="metiers.3.prestations.0.titre">Écran interactif / collaboratif</li><li data-cms="metiers.3.prestations.1.titre">Écran d'accueil</li><li data-cms="metiers.3.prestations.2.titre">Affichage dynamique</li></ul>
-          <span class="link-arrow">Découvrir <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></span>
-        </div>
-      </a><a class="sol reveal" href="impression.html">
-        <svg class="hex sol-hex" viewBox="0 0 300 266" aria-hidden="true" data-cms-photo="metiers.4.photo"><defs><clipPath id="hx12"><polygon points="77,7 223,7 296,133 223,259 77,259 4,133"/></clipPath></defs><image href="assets/photos/copieur.jpg" width="300" height="266" preserveAspectRatio="xMidYMid slice" clip-path="url(#hx12)"/><polygon class="hex-frame" points="77,7 223,7 296,133 223,259 77,259 4,133"/></svg>
-        <div class="sol-body">
-          <h3 data-cms="metiers.4.menu">Impression &amp; GED</h3>
-          <p data-cms="metiers.4.resume" data-cms-multi>Photocopieurs multifonctions A4 et A3, traceurs et gestion électronique de documents : le matériel adapté à vos volumes, installé et entretenu.</p>
-          <ul><li data-cms="metiers.4.prestations.0.titre">Photocopieurs multifonctions</li><li data-cms="metiers.4.prestations.1.titre">Traceurs multifonctions</li><li data-cms="metiers.4.prestations.2.titre">Gestion électronique de documents</li></ul>
-          <span class="link-arrow">Découvrir <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></span>
-        </div>
-      </a><a class="sol reveal" href="point-de-vente.html">
-        <svg class="hex sol-hex" viewBox="0 0 300 266" aria-hidden="true" data-cms-photo="metiers.5.photo"><defs><clipPath id="hx13"><polygon points="77,7 223,7 296,133 223,259 77,259 4,133"/></clipPath></defs><image href="assets/photos/caisse.jpg" width="300" height="266" preserveAspectRatio="xMidYMid slice" clip-path="url(#hx13)"/><polygon class="hex-frame" points="77,7 223,7 296,133 223,259 77,259 4,133"/></svg>
-        <div class="sol-body">
-          <h3 data-cms="metiers.5.menu">Équipement Point de vente</h3>
-          <p data-cms="metiers.5.resume" data-cms-multi>Caisses enregistreuses et bornes de commande pour les commerces et les restaurateurs, livrées avec leur logiciel et installées chez vous.</p>
-          <ul><li data-cms="metiers.5.prestations.0.titre">Caisse enregistreuse</li><li data-cms="metiers.5.prestations.1.titre">Borne de commande</li></ul>
-          <span class="link-arrow">Découvrir <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></span>
-        </div>
-      </a><a class="sol reveal" href="communication.html">
-        <svg class="hex sol-hex" viewBox="0 0 300 266" aria-hidden="true" data-cms-photo="metiers.6.photo"><defs><clipPath id="hx14"><polygon points="77,7 223,7 296,133 223,259 77,259 4,133"/></clipPath></defs><image href="assets/photos/web.jpg" width="300" height="266" preserveAspectRatio="xMidYMid slice" clip-path="url(#hx14)"/><polygon class="hex-frame" points="77,7 223,7 296,133 223,259 77,259 4,133"/></svg>
-        <div class="sol-body">
-          <h3 data-cms="metiers.6.menu">Communication</h3>
-          <p data-cms="metiers.6.resume" data-cms-multi>Site internet et réseaux sociaux : nous vous aidons à présenter votre activité et à rester visible auprès de vos clients.</p>
-          <ul><li data-cms="metiers.6.prestations.0.titre">Site internet</li><li data-cms="metiers.6.prestations.1.titre">Réseaux sociaux</li></ul>
-          <span class="link-arrow">Découvrir <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></span>
-        </div>
-      </a></div>
-  </div>
-</section>
-
-<section class="section sky" id="formules">
-  <div class="wrap">
-    <div class="section-head  reveal">
-      <p class="kicker" data-cms="formules.surtitre">Achat / Location / Maintenance</p>
-      <h2 data-cms="formules.titre">La formule qui convient à <em>votre trésorerie.</em></h2>
-      
-    </div>
-    <div class="cards3"><article class="card reveal"><span class="card-num">01</span><h3 data-cms="formules.cartes.0.titre">Achat</h3>
-        <p data-cms="formules.cartes.0.texte" data-cms-multi>Vous devenez propriétaire de votre matériel. Nous vous aidons à choisir le bon équipement, puis nous l'installons.</p>
-        
-        <a class="link-arrow" href="#devis" data-formule="Achat"><span data-cms="formules.cartes.0.lien">Demander un prix</span> <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a></article><article class="card reveal"><span class="card-num">02</span><h3 data-cms="formules.cartes.1.titre">Location</h3>
-        <p data-cms="formules.cartes.1.texte" data-cms-multi>Un loyer régulier plutôt qu'un investissement : votre trésorerie reste disponible pour votre activité.</p>
-        <div class="fin"><span>Financement avec</span><img src="assets/partners/23-locam.png" alt="Locam" loading="lazy"><img src="assets/partners/24-grenke.png" alt="Grenke" loading="lazy"></div>
-        <a class="link-arrow" href="#devis" data-formule="Location"><span data-cms="formules.cartes.1.lien">Estimer un loyer</span> <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a></article><article class="card reveal"><span class="card-num">03</span><h3 data-cms="formules.cartes.2.titre">Maintenance</h3>
-        <p data-cms="formules.cartes.2.texte" data-cms-multi>Entretien et dépannage de vos équipements, avec une intervention sous 24h pour que votre activité ne s'arrête pas.</p>
-        
-        <a class="link-arrow" href="#devis" data-formule="Maintenance"><span data-cms="formules.cartes.2.lien">Demander un contrat</span> <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a></article></div>
-  </div>
-</section>
-
-<section class="section" id="methode">
-  <div class="wrap method">
-    <div class="method-visual reveal">
-      <svg class="hex method-hex" viewBox="0 0 300 266" role="img" aria-label="Un conseiller présente une solution à un client" data-cms-photo="accueil.methode.photo"><defs><clipPath id="hx15"><polygon points="77,7 223,7 296,133 223,259 77,259 4,133"/></clipPath></defs><image href="assets/photos/oussou-bill.jpg" width="300" height="266" preserveAspectRatio="xMidYMid slice" clip-path="url(#hx15)"/><polygon class="hex-frame" points="77,7 223,7 296,133 223,259 77,259 4,133"/></svg>
-    </div>
-    <div class="method-copy">
-      <div class="reveal">
-        <p class="kicker" data-cms="accueil.methode.surtitre">Qui sommes-nous ?</p>
-        <h2 data-cms="accueil.methode.titre">Une approche <em>différente</em> du métier.</h2>
-        <p class="lead" data-cms="accueil.methode.texte" data-cms-multi>Derrière Les Bureauticiens, un dirigeant avec plus de 10 ans d'expérience terrain et un réseau de partenaires techniques experts, coordonnés selon vos besoins. Pas de structure inutile : juste les bons profils, au bon moment.</p>
-        <p class="pull" data-cms="accueil.methode.citation" data-cms-multi>« Nous ne cherchons pas la transaction. Nous construisons des relations durables avec des clients qui nous recommandent. »</p>
+    <div class="bubbles">
+      <div class="bubble reveal">
+        <span class="num">1</span>
+        <a class="hexbig" href="securite.html"><img src="assets/bulle-securite.jpg" alt="Sécurité des biens et des personnes"></a>
+        <h3><a href="securite.html">Sécurité des biens et des personnes</a></h3>
+        <p>Vidéosurveillance · Alarme intrusion · Contrôle d'accès</p>
+        <div class="bubble-menu"><a href="videosurveillance.html">Vidéosurveillance</a><a href="alarme-intrusion.html">Alarme intrusion</a><a href="controle-acces.html">Contrôle d'accès</a></div>
+        <a class="go" href="securite.html">Découvrir →</a>
       </div>
-      <ol class="steps"><li class="reveal"><span>1</span><div><h3 data-cms="accueil.methode.etapes.0.titre">Audit personnalisé</h3><p data-cms="accueil.methode.etapes.0.texte" data-cms-multi>Nous partons de vos usages réels, pas d'un catalogue.</p></div></li><li class="reveal"><span>2</span><div><h3 data-cms="accueil.methode.etapes.1.titre">Proposition sous 24h</h3><p data-cms="accueil.methode.etapes.1.texte" data-cms-multi>Un devis clair, en achat, en location ou en maintenance.</p></div></li><li class="reveal"><span>3</span><div><h3 data-cms="accueil.methode.etapes.2.titre">Installation</h3><p data-cms="accueil.methode.etapes.2.texte" data-cms-multi>Les bons experts, coordonnés par votre interlocuteur.</p></div></li><li class="reveal"><span>4</span><div><h3 data-cms="accueil.methode.etapes.3.titre">Suivi durable</h3><p data-cms="accueil.methode.etapes.3.texte" data-cms-multi>Le même contact pour tout gérer, sur le long terme.</p></div></li></ol>
-    </div>
-  </div>
-</section>
-
-<section class="section sky" id="avis">
-  <div class="wrap">
-    <div class="section-head  reveal">
-      <p class="kicker" data-cms="accueil.avis.surtitre">Avis clients</p>
-      <h2 data-cms="accueil.avis.titre">Ils nous confient <em>leurs équipements.</em></h2>
-      <a class="rating" href="https://www.google.com/maps/search/?api=1&amp;query=Les+Bureauticiens+23+Avenue+de+Saint-Mand%C3%A9+75012+Paris" target="_blank" rel="noopener"><span class="stars" role="img" aria-label="5 étoiles sur 5"><svg class="star" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8L1.6 7.7l5.8-.8z"/></svg><svg class="star" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8L1.6 7.7l5.8-.8z"/></svg><svg class="star" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8L1.6 7.7l5.8-.8z"/></svg><svg class="star" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8L1.6 7.7l5.8-.8z"/></svg><svg class="star" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8L1.6 7.7l5.8-.8z"/></svg></span><span><b>5,0</b> sur Google · 8 avis — voir la fiche</span></a>
-    </div>
-    <div class="avis-grid"><figure class="avis avis-lg reveal">
-  <span class="stars" role="img" aria-label="5 étoiles sur 5"><svg class="star" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8L1.6 7.7l5.8-.8z"/></svg><svg class="star" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8L1.6 7.7l5.8-.8z"/></svg><svg class="star" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8L1.6 7.7l5.8-.8z"/></svg><svg class="star" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8L1.6 7.7l5.8-.8z"/></svg><svg class="star" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8L1.6 7.7l5.8-.8z"/></svg></span>
-  <blockquote data-cms="avis.0.texte" data-cms-multi>Je vous remercie d’avoir pu régler tous mes problèmes dans mes bureaux concernant l’impression de mes documents. J’avais toujours des problèmes avec les imprimantes chez un nouveau concurrent. Et aujourd’hui vous avez enfin réglé mon problème, l’installation s’est très bien passée et surtout la formation avec votre technicien pour nous expliquer toutes les fonctionnalités du matériel que vous nous avez installé.</blockquote>
-  <figcaption><span class="avatar" aria-hidden="true">S</span><span><b data-cms="avis.0.nom">SARL HBM TECH</b><small>Avis Google</small></span></figcaption>
-</figure><figure class="avis  reveal">
-  <span class="stars" role="img" aria-label="5 étoiles sur 5"><svg class="star" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8L1.6 7.7l5.8-.8z"/></svg><svg class="star" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8L1.6 7.7l5.8-.8z"/></svg><svg class="star" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8L1.6 7.7l5.8-.8z"/></svg><svg class="star" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8L1.6 7.7l5.8-.8z"/></svg><svg class="star" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8L1.6 7.7l5.8-.8z"/></svg></span>
-  <blockquote data-cms="avis.1.texte" data-cms-multi>Je recommande cette entreprise les yeux fermés ! Une équipe sérieuse, professionnelle et toujours à l’écoute. C’est une société de confiance, qui propose un travail de qualité et un excellent service. Les échanges sont agréables, les délais sont respectés et on sent un vrai souci de satisfaire les clients. […]</blockquote>
-  <figcaption><span class="avatar" aria-hidden="true">S</span><span><b data-cms="avis.1.nom">SHERAZAD lamari</b><small>Avis Google</small></span></figcaption>
-</figure><figure class="avis  reveal">
-  <span class="stars" role="img" aria-label="5 étoiles sur 5"><svg class="star" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8L1.6 7.7l5.8-.8z"/></svg><svg class="star" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8L1.6 7.7l5.8-.8z"/></svg><svg class="star" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8L1.6 7.7l5.8-.8z"/></svg><svg class="star" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8L1.6 7.7l5.8-.8z"/></svg><svg class="star" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8L1.6 7.7l5.8-.8z"/></svg></span>
-  <blockquote data-cms="avis.2.texte" data-cms-multi>Nous avons contracté avec les Bureauticiens. ce sont de vrais professionnels, l'installation de mon serveur informatique ainsi que mes postes a été rapide, efficace et sécurisée. Je recommande vivement</blockquote>
-  <figcaption><span class="avatar" aria-hidden="true">A</span><span><b data-cms="avis.2.nom">Alain BOUAZIS</b><small>Avis Google</small></span></figcaption>
-</figure><figure class="avis avis-sm reveal">
-  <span class="stars" role="img" aria-label="5 étoiles sur 5"><svg class="star" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8L1.6 7.7l5.8-.8z"/></svg><svg class="star" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8L1.6 7.7l5.8-.8z"/></svg><svg class="star" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8L1.6 7.7l5.8-.8z"/></svg><svg class="star" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8L1.6 7.7l5.8-.8z"/></svg><svg class="star" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8L1.6 7.7l5.8-.8z"/></svg></span>
-  <blockquote data-cms="avis.3.texte" data-cms-multi>De très bons services pour les professionnels. Personnel réactif 👍</blockquote>
-  <figcaption><span class="avatar" aria-hidden="true">L</span><span><b data-cms="avis.3.nom">laurent taieb</b><small>Avis Google</small></span></figcaption>
-</figure><figure class="avis avis-sm reveal">
-  <span class="stars" role="img" aria-label="5 étoiles sur 5"><svg class="star" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8L1.6 7.7l5.8-.8z"/></svg><svg class="star" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8L1.6 7.7l5.8-.8z"/></svg><svg class="star" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8L1.6 7.7l5.8-.8z"/></svg><svg class="star" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8L1.6 7.7l5.8-.8z"/></svg><svg class="star" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8L1.6 7.7l5.8-.8z"/></svg></span>
-  <blockquote data-cms="avis.4.texte" data-cms-multi>Très professionnel, à recommander vivement!</blockquote>
-  <figcaption><span class="avatar" aria-hidden="true">A</span><span><b data-cms="avis.4.nom">Aurélie Yiflach</b><small>Avis Google</small></span></figcaption>
-</figure><figure class="avis avis-sm reveal">
-  <span class="stars" role="img" aria-label="5 étoiles sur 5"><svg class="star" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8L1.6 7.7l5.8-.8z"/></svg><svg class="star" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8L1.6 7.7l5.8-.8z"/></svg><svg class="star" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8L1.6 7.7l5.8-.8z"/></svg><svg class="star" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8L1.6 7.7l5.8-.8z"/></svg><svg class="star" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8L1.6 7.7l5.8-.8z"/></svg></span>
-  <blockquote data-cms="avis.5.texte" data-cms-multi>Entreprise sérieuse efficace et professionnel</blockquote>
-  <figcaption><span class="avatar" aria-hidden="true">W</span><span><b data-cms="avis.5.nom">Wail</b><small>Avis Google</small></span></figcaption>
-</figure></div>
-  </div>
-</section>
-
-<section class="section" id="partenaires">
-  <div class="wrap">
-    <div class="section-head  reveal">
-      <p class="kicker" data-cms="accueil.partenaires.surtitre">Nos partenaires</p>
-      <h2 data-cms="accueil.partenaires.titre">Les grandes marques, <em>choisies pour vous.</em></h2>
-      
-    </div>
-    <ul class="logos reveal"><li><img src="assets/partners/01-dell.png" alt="Dell" loading="lazy"></li><li><img src="assets/partners/02-acer.png" alt="Acer" loading="lazy"></li><li><img src="assets/partners/03-hp.png" alt="HP" loading="lazy"></li><li><img src="assets/partners/04-lenovo.png" alt="Lenovo" loading="lazy"></li><li><img src="assets/partners/05-asus.png" alt="Asus" loading="lazy"></li><li><img src="assets/partners/06-toshiba.png" alt="Toshiba" loading="lazy"></li><li><img src="assets/partners/07-develop.png" alt="Develop" loading="lazy"></li><li><img src="assets/partners/08-konica-minolta.png" alt="Konica Minolta" loading="lazy"></li><li><img src="assets/partners/09-lexmark.png" alt="Lexmark" loading="lazy"></li><li><img src="assets/partners/10-ricoh.png" alt="Ricoh" loading="lazy"></li><li><img src="assets/partners/11-panasonic.png" alt="Panasonic" loading="lazy"></li><li><img src="assets/partners/12-kyocera.png" alt="Kyocera" loading="lazy"></li><li><img src="assets/partners/13-philips.png" alt="Philips" loading="lazy"></li><li><img src="assets/partners/14-cisco.png" alt="Cisco" loading="lazy"></li><li><img src="assets/partners/15-apple-solution.png" alt="Apple Solution Expert" loading="lazy"></li><li><img src="assets/partners/16-gigaset.png" alt="Gigaset" loading="lazy"></li><li><img src="assets/partners/17-logitech.png" alt="Logitech" loading="lazy"></li><li><img src="assets/partners/18-alcatel.png" alt="Alcatel" loading="lazy"></li><li><img src="assets/partners/19-dahua.png" alt="Dahua" loading="lazy"></li><li><img src="assets/partners/20-hikvision.png" alt="Hikvision" loading="lazy"></li><li><img src="assets/partners/21-canon.png" alt="Canon" loading="lazy"></li><li><img src="assets/partners/22-yealink.png" alt="Yealink" loading="lazy"></li><li><img src="assets/partners/23-locam.png" alt="Locam" loading="lazy"></li><li><img src="assets/partners/24-grenke.png" alt="Grenke" loading="lazy"></li></ul>
-  </div>
-</section>
-
-<section class="section section-tight" id="faq">
-  <div class="wrap faq">
-    <div class="section-head left reveal">
-      <p class="kicker" data-cms="accueil.faq.surtitre">Questions fréquentes</p>
-      <h2 data-cms="accueil.faq.titre">Avant de <em>nous écrire.</em></h2>
-      <p><span data-cms="accueil.faq.texte">Une autre question ? Appelez-nous, c'est souvent plus rapide :</span> <a href="tel:+33143424192">01 43 42 41 92</a></p>
-    </div>
-    <div class="faq-list reveal"><details open><summary><span data-cms="faq.0.question">Le devis est-il payant ?</span></summary><p data-cms="faq.0.reponse" data-cms-multi>Non. Le devis est gratuit et ne vous engage à rien. Vous décrivez votre besoin, nous revenons vers vous sous 24h.</p></details><details><summary><span data-cms="faq.1.question">En combien de temps intervenez-vous ?</span></summary><p data-cms="faq.1.reponse" data-cms-multi>Nous nous engageons sur une intervention sous 24h.</p></details><details><summary><span data-cms="faq.2.question">Faut-il acheter le matériel ?</span></summary><p data-cms="faq.2.reponse" data-cms-multi>Pas forcément. Chaque équipement peut être proposé à l'achat ou en location, et nous assurons aussi la maintenance. Nous vous conseillons la formule adaptée à votre situation.</p></details><details><summary><span data-cms="faq.3.question">Puis-je tout vous confier, du copieur à l'alarme ?</span></summary><p data-cms="faq.3.reponse" data-cms-multi>Oui, c'est notre raison d'être : un seul interlocuteur coordonne les experts de nos sept métiers, de l'impression à la sécurité.</p></details></div>
-  </div>
-</section>
-
-
-<section class="devis" id="devis">
-  <div class="wrap devis-grid">
-    <div class="devis-copy reveal">
-      <p class="kicker" data-cms="devis.surtitre">Devis gratuit</p>
-      <h2 data-cms="devis.titre">Parlons de <em>votre projet.</em></h2>
-      <p class="lead" data-cms="devis.texte" data-cms-multi>Trois questions, une minute. Nous étudions votre besoin et revenons vers vous sous 24h avec une proposition chiffrée.</p>
-      <ul class="ticks"><li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span data-cms="devis.points.0">Gratuit et sans engagement</span></li><li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span data-cms="devis.points.1">Réponse sous 24h</span></li><li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span data-cms="devis.points.2">Un seul interlocuteur du devis au suivi</span></li></ul>
-      <p class="devis-call"><span data-cms="devis.telephone">Plus rapide par téléphone ?</span> <a href="tel:+33143424192">01 43 42 41 92</a></p>
-    </div>
-
-    <div class="quote reveal">
-      <form id="quoteForm" novalidate>
-        <div class="quote-head">
-          <h3 id="quoteTitle">Quel est votre besoin ?</h3>
-          <span class="quote-count" id="quoteCount" aria-live="polite">1 / 3</span>
-        </div>
-        <div class="progress" aria-hidden="true"><i id="progressBar"></i></div>
-
-        <fieldset class="step is-active" data-step="1" data-title="Quel est votre besoin ?">
-          <legend class="sr">Vos besoins (plusieurs choix possibles)</legend>
-          <div class="needs"><label class="need"><input type="checkbox" name="besoin" value="Sécurité des biens et des personnes"><span><svg class="ic" aria-hidden="true"><use href="#i-shield"/></svg><b data-cms="metiers.0.menu">Sécurité des biens et des personnes</b><small data-cms="metiers.0.court">Vidéosurveillance, alarme, contrôle d'accès</small></span></label><label class="need"><input type="checkbox" name="besoin" value="Téléphonie, d&#x27;entreprise &amp; Câblage"><span><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg><b data-cms="metiers.1.menu">Téléphonie, d'entreprise &amp; Câblage</b><small data-cms="metiers.1.court">Standard, fibre, wifi, câblage</small></span></label><label class="need"><input type="checkbox" name="besoin" value="Solutions IT"><span><svg class="ic" aria-hidden="true"><use href="#i-it"/></svg><b data-cms="metiers.2.menu">Solutions IT</b><small data-cms="metiers.2.court">Informatique, infogérance, cybersécurité</small></span></label><label class="need"><input type="checkbox" name="besoin" value="Multimédia"><span><svg class="ic" aria-hidden="true"><use href="#i-screen"/></svg><b data-cms="metiers.3.menu">Multimédia</b><small data-cms="metiers.3.court">Écrans interactifs, affichage dynamique</small></span></label><label class="need"><input type="checkbox" name="besoin" value="Impression &amp; GED"><span><svg class="ic" aria-hidden="true"><use href="#i-print"/></svg><b data-cms="metiers.4.menu">Impression &amp; GED</b><small data-cms="metiers.4.court">Photocopieurs, traceurs, GED</small></span></label><label class="need"><input type="checkbox" name="besoin" value="Équipement Point de vente"><span><svg class="ic" aria-hidden="true"><use href="#i-cash"/></svg><b data-cms="metiers.5.menu">Équipement Point de vente</b><small data-cms="metiers.5.court">Caisses, bornes de commande</small></span></label><label class="need"><input type="checkbox" name="besoin" value="Communication"><span><svg class="ic" aria-hidden="true"><use href="#i-globe"/></svg><b data-cms="metiers.6.menu">Communication</b><small data-cms="metiers.6.court">Site internet, réseaux sociaux</small></span></label></div>
-          <p class="hint">Plusieurs choix possibles.</p>
-          <p class="error" id="err1" role="alert" hidden>Sélectionnez au moins un besoin.</p>
-        </fieldset>
-
-        <fieldset class="step" data-step="2" data-title="Précisez votre projet">
-          <legend class="sr">Détails du projet</legend>
-          <div class="group">
-            <p class="group-label">Formule envisagée</p>
-            <div class="chips">
-              <label><input type="radio" name="formule" value="Achat"><span>Achat</span></label>
-              <label><input type="radio" name="formule" value="Location"><span>Location</span></label>
-              <label><input type="radio" name="formule" value="Maintenance"><span>Maintenance</span></label>
-              <label><input type="radio" name="formule" value="À définir" checked><span>Conseillez-moi</span></label>
-            </div>
-          </div>
-          <div class="group">
-            <p class="group-label">Taille de l'entreprise</p>
-            <div class="chips">
-              <label><input type="radio" name="taille" value="1 à 5 postes"><span>1–5 postes</span></label>
-              <label><input type="radio" name="taille" value="6 à 20 postes" checked><span>6–20</span></label>
-              <label><input type="radio" name="taille" value="21 à 50 postes"><span>21–50</span></label>
-              <label><input type="radio" name="taille" value="Plus de 50 postes"><span>50 +</span></label>
-            </div>
-          </div>
-          <div class="group">
-            <p class="group-label">Échéance</p>
-            <div class="chips">
-              <label><input type="radio" name="delai" value="Urgent"><span>Urgent</span></label>
-              <label><input type="radio" name="delai" value="Dans le mois" checked><span>Dans le mois</span></label>
-              <label><input type="radio" name="delai" value="Je me renseigne"><span>Je me renseigne</span></label>
-            </div>
-          </div>
-        </fieldset>
-
-        <fieldset class="step" data-step="3" data-title="Où envoyer votre devis ?">
-          <legend class="sr">Vos coordonnées</legend>
-          <input type="text" name="_honey" class="sr" tabindex="-1" autocomplete="off" aria-hidden="true">
-          <div class="fields">
-            <label class="field"><span>Nom complet</span><input type="text" name="nom" autocomplete="name" required></label>
-            <label class="field"><span>Société</span><input type="text" name="societe" autocomplete="organization"></label>
-            <label class="field"><span>Email professionnel</span><input type="email" name="email" autocomplete="email" inputmode="email" required></label>
-            <label class="field"><span>Téléphone <i>(facultatif)</i></span><input type="tel" name="tel" autocomplete="tel" inputmode="tel"></label>
-            <label class="field full"><span>Un mot sur votre projet <i>(facultatif)</i></span><textarea name="message" rows="2"></textarea></label>
-          </div>
-          <p class="error" id="err3" role="alert" hidden>Indiquez votre nom et un email valide.</p>
-          <p class="legal">Vos données servent uniquement à vous recontacter.</p>
-        </fieldset>
-
-        <div class="quote-nav">
-          <button type="button" class="btn btn-quiet" id="prevBtn" hidden>Retour</button>
-          <button type="button" class="btn btn-primary btn-grow" id="nextBtn">Continuer <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></button>
-        </div>
-      </form>
-
-      <div class="quote-done" id="quoteDone" hidden tabindex="-1">
-        <span class="done-badge"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg></span>
-        <h3>Demande prête à partir</h3>
-        <p id="doneText">Votre messagerie vient de s'ouvrir avec votre demande : il ne reste qu'à l'envoyer. Nous revenons vers vous sous 24h.</p>
-        <p class="done-alt">Plus rapide ? Appelez-nous au <a href="tel:+33143424192">01 43 42 41 92</a>.</p>
-        <button type="button" class="btn btn-quiet" id="restartBtn">Faire une autre demande</button>
+      <div class="bubble reveal">
+        <span class="num">2</span>
+        <a class="hexbig" href="telephonie-reseaux.html"><img src="assets/bulle-telephonie.jpg" alt="Téléphonie, réseau d'entreprise &amp; câblage"></a>
+        <h3><a href="telephonie-reseaux.html">Téléphonie, réseau d'entreprise &amp; câblage</a></h3>
+        <p>Centrex IP · IPBX / PABX</p>
+        <div class="bubble-menu"><a href="postes-fixes.html">Postes fixes</a><a href="postes-mobiles.html">Postes mobiles</a><a href="accueil-telephonique.html">Accueil téléphonique</a><a href="application-mobile.html">Application mobile</a><a href="acces-internet.html">Accès internet</a><a href="bornes-wifi.html">Bornes Wi-Fi</a><a href="cablage.html">Câblage réseau</a></div>
+        <a class="go" href="telephonie-reseaux.html">Découvrir →</a>
+      </div>
+      <div class="bubble reveal">
+        <span class="num">3</span>
+        <a class="hexbig" href="solutions-it.html"><img src="assets/bulle-it.jpg" alt="Solutions IT"></a>
+        <h3><a href="solutions-it.html">Solutions IT</a></h3>
+        <p>Informatique · Infogérance · Cybersécurité</p>
+        <div class="bubble-menu"><a href="postes-informatiques.html">Postes fixes &amp; portables</a><a href="serveurs.html">Serveurs &amp; stockage</a><a href="cybersecurite.html">Firewall &amp; antivirus</a><a href="onduleurs.html">Onduleurs</a><a href="microsoft-365.html">Microsoft 365 &amp; OneDrive</a><a href="infogerance.html">Infogérance</a></div>
+        <a class="go" href="solutions-it.html">Découvrir →</a>
+      </div>
+      <div class="bubble reveal">
+        <span class="num">4</span>
+        <a class="hexbig" href="multimedia.html"><img src="assets/bulle-multimedia.jpg" alt="Multimédia"></a>
+        <h3><a href="multimedia.html">Multimédia</a></h3>
+        <p>Écrans interactifs · Écrans d'accueil · Affichage dynamique</p>
+        <div class="bubble-menu"><a href="ecrans-interactifs.html">Écrans interactifs &amp; collaboratifs</a><a href="ecrans-accueil.html">Écrans d'accueil</a><a href="affichage-dynamique.html">Affichage dynamique</a></div>
+        <a class="go" href="multimedia.html">Découvrir →</a>
+      </div>
+      <div class="bubble reveal">
+        <span class="num">5</span>
+        <a class="hexbig" href="impression-ged.html"><img src="assets/bulle-impression.jpg" alt="Impression &amp; GED"></a>
+        <h3><a href="impression-ged.html">Impression &amp; GED</a></h3>
+        <p>Photocopieurs · Traceurs · Gestion électronique de documents</p>
+        <div class="bubble-menu"><a href="photocopieurs.html">Photocopieurs A4 / A3</a><a href="traceurs.html">Traceurs multifonctions</a><a href="ged.html">Gestion électronique de documents</a><a href="contrat-maintenance-impression.html">Contrat de maintenance impression</a></div>
+        <a class="go" href="impression-ged.html">Découvrir →</a>
+      </div>
+      <div class="bubble reveal">
+        <span class="num">6</span>
+        <a class="hexbig" href="point-de-vente.html"><img src="https://images.unsplash.com/photo-1647427017067-8f33ccbae493?auto=format&fit=crop&w=600&h=520&q=75" alt="Équipements point de vente"></a>
+        <h3><a href="point-de-vente.html">Équipements point de vente</a></h3>
+        <p>Commerces · Restaurateurs</p>
+        <div class="bubble-menu"><a href="caisse-enregistreuse.html">Caisse enregistreuse</a><a href="borne-de-commande.html">Borne de commande</a><a href="ecrans-point-de-vente.html">Écrans clients &amp; cuisine</a><a href="logiciel-de-caisse.html">Logiciel de gestion</a><a href="tiroir-caisse.html">Tiroir-caisse &amp; périphériques</a><a href="impression-tickets.html">Impression de tickets</a></div>
+        <a class="go" href="point-de-vente.html">Découvrir →</a>
+      </div>
+      <div class="bubble reveal">
+        <span class="num">7</span>
+        <a class="hexbig" href="communication.html"><img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?auto=format&fit=crop&w=600&h=520&q=75" alt="Communication"></a>
+        <h3><a href="communication.html">Communication</a></h3>
+        <p>Site internet · Réseaux sociaux</p>
+        <div class="bubble-menu"><a href="site-internet.html">Site internet</a><a href="reseaux-sociaux.html">Réseaux sociaux</a></div>
+        <a class="go" href="communication.html">Découvrir →</a>
       </div>
     </div>
   </div>
 </section>
 
-</main>
-<footer class="footer" id="contact">
-  <div class="wrap footer-grid">
-    <div class="footer-brand">
-      <a href="index.html" class="logo" aria-label="Les Bureauticiens — accueil">
-        <img src="assets/logo-mark-light-sm.png" alt="" width="46" height="50" loading="lazy">
-        <img src="assets/logo-wordmark-light-sm.png" alt="Les Bureauticiens" width="190" height="36" loading="lazy">
-      </a>
-      <p data-cms="site.presentation" data-cms-multi>Sécurité, téléphonie, informatique, multimédia, impression, point de vente et communication pour les professionnels.<br>Achat · Location · Maintenance</p>
-      <a class="rating rating-dark" href="https://www.google.com/maps/search/?api=1&amp;query=Les+Bureauticiens+23+Avenue+de+Saint-Mand%C3%A9+75012+Paris" target="_blank" rel="noopener"><span class="stars" role="img" aria-label="5 étoiles sur 5"><svg class="star" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8L1.6 7.7l5.8-.8z"/></svg><svg class="star" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8L1.6 7.7l5.8-.8z"/></svg><svg class="star" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8L1.6 7.7l5.8-.8z"/></svg><svg class="star" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8L1.6 7.7l5.8-.8z"/></svg><svg class="star" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8L1.6 7.7l5.8-.8z"/></svg></span><span><b>5,0</b> sur Google · 8 avis</span></a>
+<section class="metiers" id="secteurs">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="tag">Pour qui ?</span>
+      <h2>Les métiers que nous <span>équipons</span></h2>
+      <p>Chaque activité a son quotidien. Choisissez la vôtre pour voir ce que nous mettons en place.</p>
     </div>
-    <div>
-      <h3>Nos métiers</h3>
-      <ul><li><a href="securite.html" data-cms="metiers.0.menu">Sécurité des biens et des personnes</a></li><li><a href="telephonie.html" data-cms="metiers.1.menu">Téléphonie, d'entreprise &amp; Câblage</a></li><li><a href="informatique.html" data-cms="metiers.2.menu">Solutions IT</a></li><li><a href="multimedia.html" data-cms="metiers.3.menu">Multimédia</a></li><li><a href="impression.html" data-cms="metiers.4.menu">Impression &amp; GED</a></li><li><a href="point-de-vente.html" data-cms="metiers.5.menu">Équipement Point de vente</a></li><li><a href="communication.html" data-cms="metiers.6.menu">Communication</a></li></ul>
+    <div class="metiers-wrap reveal">
+      <div class="metiers-list" role="tablist" aria-label="Métiers">
+        <button class="mt active" role="tab" aria-selected="true" data-i="0"><span class="mt-n">01</span><span class="mt-t"><b>Commerces</b><small>Boutiques, épiceries, magasins</small></span><i class="mt-bar"></i></button>
+        <button class="mt" role="tab" aria-selected="false" data-i="1"><span class="mt-n">02</span><span class="mt-t"><b>Restaurants &amp; bars</b><small>Restauration, cafés, fast-food</small></span><i class="mt-bar"></i></button>
+        <button class="mt" role="tab" aria-selected="false" data-i="2"><span class="mt-n">03</span><span class="mt-t"><b>Santé</b><small>Cabinets médicaux, paramédicaux</small></span><i class="mt-bar"></i></button>
+        <button class="mt" role="tab" aria-selected="false" data-i="3"><span class="mt-n">04</span><span class="mt-t"><b>Professions libérales</b><small>Avocats, comptables, notaires</small></span><i class="mt-bar"></i></button>
+        <button class="mt" role="tab" aria-selected="false" data-i="4"><span class="mt-n">05</span><span class="mt-t"><b>BTP &amp; architectes</b><small>Bureaux d'études, artisans</small></span><i class="mt-bar"></i></button>
+        <button class="mt" role="tab" aria-selected="false" data-i="5"><span class="mt-n">06</span><span class="mt-t"><b>Bureaux &amp; agences</b><small>PME, sièges, start-up</small></span><i class="mt-bar"></i></button>
+        <button class="mt" role="tab" aria-selected="false" data-i="6"><span class="mt-n">07</span><span class="mt-t"><b>Hôtellerie</b><small>Hôtels, résidences, gîtes</small></span><i class="mt-bar"></i></button>
+        <button class="mt" role="tab" aria-selected="false" data-i="7"><span class="mt-n">08</span><span class="mt-t"><b>Écoles &amp; associations</b><small>Établissements, centres de formation</small></span><i class="mt-bar"></i></button>
+      </div>
+      <div class="metiers-stage">
+        <article class="mp active" role="tabpanel"><video muted loop playsinline preload="none" src="https://videos.pexels.com/video-files/8421356/8421356-sd_960_540_25fps.mp4"></video><div class="mp-shade"></div><div class="mp-body"><span class="mp-num">01 / 08</span><h3>Commerces</h3><p>Encaissez plus vite, attirez le regard en vitrine et protégez votre magasin, jour et nuit.</p><div class="mp-chips"><a href="caisse-enregistreuse.html">Caisse enregistreuse</a><a href="tiroir-caisse.html">Tiroir-caisse</a><a href="affichage-dynamique.html">Affichage vitrine</a><a href="videosurveillance.html">Vidéosurveillance</a><a href="alarme-intrusion.html">Alarme</a></div><a class="btn btn-primary" href="#contact" data-tab="devis">Équiper mon activité</a></div></article>
+        <article class="mp" role="tabpanel"><video muted loop playsinline preload="none" data-src="https://videos.pexels.com/video-files/6816117/6816117-sd_960_540_25fps.mp4"></video><div class="mp-shade"></div><div class="mp-body"><span class="mp-num">02 / 08</span><h3>Restaurants &amp; bars</h3><p>Du passage de commande à la cuisine, un service fluide même au coup de feu.</p><div class="mp-chips"><a href="caisse-enregistreuse.html">Caisse tactile</a><a href="borne-de-commande.html">Borne de commande</a><a href="ecrans-point-de-vente.html">Écrans cuisine</a><a href="impression-tickets.html">Tickets</a><a href="bornes-wifi.html">Wi-Fi clients</a></div><a class="btn btn-primary" href="#contact" data-tab="devis">Équiper mon activité</a></div></article>
+        <article class="mp" role="tabpanel"><video muted loop playsinline preload="none" data-src="https://videos.pexels.com/video-files/6998077/6998077-sd_960_540_25fps.mp4"></video><div class="mp-shade"></div><div class="mp-body"><span class="mp-num">03 / 08</span><h3>Santé</h3><p>Un accueil serein pour vos patients et des données médicales protégées.</p><div class="mp-chips"><a href="accueil-telephonique.html">Accueil téléphonique</a><a href="ecrans-accueil.html">Écran salle d'attente</a><a href="postes-informatiques.html">Postes informatiques</a><a href="cybersecurite.html">Cybersécurité</a><a href="serveurs.html">Sauvegarde</a></div><a class="btn btn-primary" href="#contact" data-tab="devis">Équiper mon activité</a></div></article>
+        <article class="mp" role="tabpanel"><video muted loop playsinline preload="none" data-src="https://videos.pexels.com/video-files/8061654/8061654-sd_960_540_25fps.mp4"></video><div class="mp-shade"></div><div class="mp-body"><span class="mp-num">04 / 08</span><h3>Professions libérales</h3><p>Vos dossiers numérisés, confidentiels et accessibles partout, en toute sécurité.</p><div class="mp-chips"><a href="ged.html">GED</a><a href="photocopieurs.html">Copieurs sécurisés</a><a href="microsoft-365.html">Microsoft 365</a><a href="cybersecurite.html">Firewall</a><a href="postes-fixes.html">Standard IP</a></div><a class="btn btn-primary" href="#contact" data-tab="devis">Équiper mon activité</a></div></article>
+        <article class="mp" role="tabpanel"><video muted loop playsinline preload="none" data-src="https://videos.pexels.com/video-files/8449347/8449347-sd_960_540_25fps.mp4"></video><div class="mp-shade"></div><div class="mp-body"><span class="mp-num">05 / 08</span><h3>BTP &amp; architectes</h3><p>Plans grand format, postes puissants et mobilité pour vos équipes sur chantier.</p><div class="mp-chips"><a href="traceurs.html">Traceurs A0</a><a href="postes-informatiques.html">Postes puissants</a><a href="postes-mobiles.html">Smartphones pro</a><a href="serveurs.html">Stockage des plans</a><a href="application-mobile.html">Application mobile</a></div><a class="btn btn-primary" href="#contact" data-tab="devis">Équiper mon activité</a></div></article>
+        <article class="mp" role="tabpanel"><video muted loop playsinline preload="none" data-src="https://videos.pexels.com/video-files/8033300/8033300-sd_960_540_25fps.mp4"></video><div class="mp-shade"></div><div class="mp-body"><span class="mp-num">06 / 08</span><h3>Bureaux &amp; agences</h3><p>Un environnement de travail moderne où tout fonctionne, sans y penser.</p><div class="mp-chips"><a href="postes-informatiques.html">Parc informatique</a><a href="postes-fixes.html">Téléphonie IP</a><a href="ecrans-interactifs.html">Salles de réunion</a><a href="infogerance.html">Infogérance</a><a href="cablage.html">Câblage</a></div><a class="btn btn-primary" href="#contact" data-tab="devis">Équiper mon activité</a></div></article>
+        <article class="mp" role="tabpanel"><video muted loop playsinline preload="none" data-src="https://videos.pexels.com/video-files/7820551/7820551-sd_960_540_25fps.mp4"></video><div class="mp-shade"></div><div class="mp-body"><span class="mp-num">07 / 08</span><h3>Hôtellerie</h3><p>Des clients bien accueillis, bien connectés et des accès parfaitement maîtrisés.</p><div class="mp-chips"><a href="bornes-wifi.html">Wi-Fi invités</a><a href="controle-acces.html">Contrôle d'accès</a><a href="ecrans-accueil.html">Écrans d'accueil</a><a href="postes-fixes.html">Téléphonie</a><a href="videosurveillance.html">Vidéosurveillance</a></div><a class="btn btn-primary" href="#contact" data-tab="devis">Équiper mon activité</a></div></article>
+        <article class="mp" role="tabpanel"><video muted loop playsinline preload="none" data-src="https://videos.pexels.com/video-files/5200348/5200348-sd_960_540_25fps.mp4"></video><div class="mp-shade"></div><div class="mp-body"><span class="mp-num">08 / 08</span><h3>Écoles &amp; associations</h3><p>Des cours plus vivants et des locaux sûrs pour les élèves et les équipes.</p><div class="mp-chips"><a href="ecrans-interactifs.html">Écrans interactifs</a><a href="controle-acces.html">Contrôle d'accès</a><a href="photocopieurs.html">Copieurs</a><a href="bornes-wifi.html">Réseau &amp; Wi-Fi</a><a href="postes-informatiques.html">Postes</a></div><a class="btn btn-primary" href="#contact" data-tab="devis">Équiper mon activité</a></div></article>
+      </div>
     </div>
-    <div>
-      <h3>Nous joindre</h3>
-      <ul class="coords">
-        <li><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg><span><a href="tel:+33143424192">01 43 42 41 92</a><br><a href="tel:+33769961219">07 69 96 12 19</a></span></li>
-        <li><svg class="ic" aria-hidden="true"><use href="#i-mail"/></svg><a href="mailto:direction@lesbureauticiens.com">direction@lesbureauticiens.com</a></li>
+  </div>
+</section>
+<section class="offers" id="offres">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="tag">Nos formules</span>
+      <h2>Achat, location ou maintenance : <span>vous choisissez</span></h2>
+      <p>Chaque projet fait l'objet d'une proposition sur mesure, adaptée à votre budget et à votre trésorerie.</p>
+    </div>
+    <div class="offers-grid">
+      <a class="offer reveal" href="achat.html"><div class="offer-img"><img src="https://images.unsplash.com/photo-1672380135241-c024f7fbfa13?auto=format&fit=crop&w=700&h=600&q=70" alt="Achat de matériel"></div><div class="num">01</div><h3>Achat</h3><p>Devenez propriétaire de votre matériel, sélectionné parmi les plus grandes marques du marché selon vos besoins réels.</p><span class="go">En savoir plus →</span></a>
+      <a class="offer reveal" href="location.html"><div class="offer-img"><img src="https://images.unsplash.com/photo-1763729805496-b5dbf7f00c79?auto=format&fit=crop&w=700&h=600&q=70" alt="Signature d'un contrat de location"></div><div class="num">02</div><h3>Location</h3><p>Préservez votre trésorerie avec une location évolutive, en partenariat avec des organismes de financement reconnus.</p><span class="go">En savoir plus →</span></a>
+      <a class="offer reveal" href="maintenance.html"><div class="offer-img"><img src="https://images.unsplash.com/photo-1721333089073-215a56fd710c?auto=format&fit=crop&w=700&h=600&q=70" alt="Technicien en intervention de maintenance"></div><div class="num">03</div><h3>Maintenance</h3><p>Installation, suivi et intervention sous 24h : vos équipements restent opérationnels, vous restez concentré sur votre activité.</p><span class="go">En savoir plus →</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="apropos">
+  <div class="container about-grid about-solo">
+    <div class="reveal">
+      <span class="tag">Qui sommes-nous</span>
+      <h2>Une autre façon de faire <span>notre métier</span></h2>
+      <p>Fort de plus de quinze ans d'expérience terrain dans les solutions numériques, notre dirigeant connaît les besoins concrets des petites et moyennes entreprises comme des grands comptes.</p>
+      <p>Notre force : un réseau de partenaires techniques experts, coordonnés selon votre projet, sans structure superflue. Nous ne cherchons pas une vente ponctuelle, mais une relation durable.</p>
+      <ul class="checks">
+        <li>Un audit personnalisé de vos besoins</li>
+        <li>Un interlocuteur unique pour tout gérer</li>
+        <li>Une relation de confiance sur le long terme</li>
       </ul>
-    </div>
-    <div>
-      <h3>Nous rendre visite</h3>
-      <ul class="coords">
-        <li><svg class="ic" aria-hidden="true"><use href="#i-pin"/></svg><span><a href="https://www.google.com/maps/search/?api=1&amp;query=Les+Bureauticiens+23+Avenue+de+Saint-Mand%C3%A9+75012+Paris" target="_blank" rel="noopener"><span data-cms="site.adresse" data-cms-multi>23 avenue de Saint-Mandé<br>75012 Paris</span></a><br><small data-cms="site.acces">Métro Picpus — ligne 6</small></span></li>
-        <li><svg class="ic" aria-hidden="true"><use href="#i-clock"/></svg><span><span data-cms="site.horaires">Lundi – vendredi, 8h – 18h</span><br><small data-cms="site.horaires_complement">Samedi sur rendez-vous</small></span></li>
-      </ul>
+      <a href="#contact" class="btn btn-primary" data-tab="rdv">Rencontrons-nous</a>
     </div>
   </div>
-  <div class="wrap footer-legal">
-    <span>© <span id="year">2026</span> Les Bureauticiens — <span data-cms="site.mentions">SAS immatriculée sous le SIREN 832 147 409 00029</span></span>
-    <span><a href="#">Mentions légales</a><a href="#">Politique de confidentialité</a></span>
+</section>
+
+<section class="president" id="mot-du-president">
+  <div class="container president-grid">
+    <figure class="president-photo reveal">
+      <img src="assets/ousmane.jpg" alt="Ousmane LAUNAY, Président des Bureauticiens" loading="lazy">
+    </figure>
+    <div class="president-text reveal">
+      <span class="tag">Le mot du président</span>
+      <h2>Un partenaire, <span>avant tout</span></h2>
+      <blockquote>
+        <p>Au fil de plus de 15 années d’expérience professionnelle, de mes débuts en tant qu’attaché commercial junior jusqu’à mes fonctions de direction commerciale, j’ai acquis une conviction profonde : ce qui distingue un véritable partenaire, ce n’est pas seulement la qualité de ses solutions, c’est avant tout la qualité de son accompagnement.</p>
+        <p class="president-values">La réactivité, la proximité, la qualité du service après-vente et la relation client sont les valeurs fondamentales qui guident notre engagement au quotidien.</p>
+        <p>Chez LES BUREAUTICIENS, nous avons fait de ces valeurs bien plus que des promesses : elles constituent notre ADN et font toute notre différence.</p>
+      </blockquote>
+      <div class="president-sign">
+        <b>Ousmane LAUNAY</b>
+        <span>Président — Les Bureauticiens</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="team" id="equipe">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="tag">Notre équipe</span>
+      <h2>Un visage sur <span>un nom</span></h2>
+      <i class="team-rule"></i>
+    </div>
+    <div class="team-row team-lead reveal">
+      <figure class="tm"><img src="assets/equipe-ousmane.jpg" alt="Ousmane LAUNAY" loading="lazy"><figcaption><b>Ousmane LAUNAY</b><span>Président</span></figcaption></figure>
+    </div>
+    <div class="team-row reveal">
+      <figure class="tm"><img src="assets/equipe-fanta.jpg" class="tm-photo" alt="Fanta KEITA" loading="lazy"><figcaption><b>Fanta KEITA</b><span>Consultante Commerciale</span></figcaption></figure>
+      <figure class="tm"><img src="assets/equipe-madani.jpg" alt="Madani DJENDAR" loading="lazy"><figcaption><b>Madani DJENDAR</b><span>Consultant Développement commercial</span></figcaption></figure>
+      <figure class="tm"><img src="assets/equipe-sherazad.jpg" class="tm-photo" alt="Shérazad LAMARI" loading="lazy"><figcaption><b>Shérazad LAMARI</b><span>Consultante Commerciale</span></figcaption></figure>
+</div>
+    <div class="team-row team-duo reveal">
+      <figure class="tm"><img src="assets/equipe-didier.jpg" class="tm-photo" alt="Didier SERVAIS" loading="lazy"><figcaption><b>Didier SERVAIS</b><span>Consultant Développeur application SaaS Cybersécurité &amp; IA</span></figcaption></figure>
+      <figure class="tm"><img src="assets/equipe-sangone.webp" class="tm-photo" alt="Sangone MBAYE" loading="lazy"><figcaption><b>Sangone MBAYE</b><span>Consultant ingénieur Système et réseau</span></figcaption></figure>
+    </div>
+    <div class="team-row team-trio reveal">
+      <figure class="tm"><img src="assets/equipe-cheikh.jpg" alt="Cheikh DIASSE" loading="lazy"><figcaption><b>Cheikh DIASSE</b><span>Consultant Marketing et Digital</span></figcaption></figure>
+      <figure class="tm"><img src="assets/equipe-david-blanc.jpg" class="tm-photo" alt="David LAUNAY" loading="lazy"><figcaption><b>David LAUNAY</b><span>Consultant communication</span></figcaption></figure>
+      <figure class="tm"><img src="assets/equipe-eliott.webp" class="tm-photo" alt="Eliott SERVAIS" loading="lazy"><figcaption><b>Eliott SERVAIS</b><span>Consultant Web Designer</span></figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="process">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="tag">Notre méthode</span>
+      <h2>De votre besoin à la <span>solution installée</span></h2>
+    </div>
+    <div class="steps">
+<div class="step reveal"><div class="step-media"><video autoplay muted loop playsinline preload="metadata" src="https://videos.pexels.com/video-files/3246669/3246669-sd_640_360_25fps.mp4"></video><span class="step-live">Échange sur place</span></div><h4>Échange &amp; audit</h4><p>Nous analysons votre existant et vos usages, sur place ou par téléphone.</p></div><div class="step reveal"><div class="step-media"><video autoplay muted loop playsinline preload="metadata" src="https://videos.pexels.com/video-files/8471105/8471105-sd_640_360_25fps.mp4"></video><span class="step-live">Votre devis sous 24h</span></div><h4>Proposition sur mesure</h4><p>Vous recevez un devis clair, en achat ou en location, sous 24h.</p></div><div class="step reveal"><div class="step-media"><video autoplay muted loop playsinline preload="metadata" src="https://videos.pexels.com/video-files/6804656/6804656-sd_640_338_25fps.mp4"></video><span class="step-live">Mise en service</span></div><h4>Installation</h4><p>Livraison, mise en service et prise en main par vos équipes.</p></div><div class="step reveal"><div class="step-media"><video autoplay muted loop playsinline preload="metadata" src="https://videos.pexels.com/video-files/7682757/7682757-sd_640_360_24fps.mp4"></video><span class="step-live">Assistance dédiée</span></div><h4>Suivi &amp; maintenance</h4><p>Un interlocuteur dédié et une intervention rapide en cas de besoin.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="reviews" id="avis">
+  <div class="container">
+    <div class="reviews-grid">
+      <div class="rev-score reveal">
+        <span class="tag">Ils nous font confiance</span>
+        <h2>Avis <span>clients</span></h2>
+        <div class="score"><strong>5,0</strong><div><div class="rev-stars big"><svg viewBox="0 0 24 24"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></div><small>Note moyenne sur <b>8 avis Google</b></small></div></div>
+        <p>Des avis 100 % authentiques, publiés par nos clients sur notre fiche Google.</p>
+        <div class="rev-btns"><a class="btn btn-primary" href="https://maps.google.com/?cid=11580393845224481456" target="_blank" rel="noopener">Voir tous les avis</a><a class="btn btn-outline" href="https://maps.google.com/?cid=11580393845224481456" target="_blank" rel="noopener">Laisser un avis</a></div>
+      </div>
+      <div class="rev-list"><article class="rev reveal"><div class="rev-top"><span class="rev-av">H</span><div><b>SARL HBM TECH</b><small>Local Guide · 29 avis</small></div><span class="rev-g">G</span></div><div class="rev-stars"><svg viewBox="0 0 24 24"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></div><p class="rev-theme">Impression de documents · Bureaux</p><small class="rev-date">Septembre 2026</small><a href="https://maps.google.com/?cid=11580393845224481456" target="_blank" rel="noopener">Lire l'avis sur Google →</a></article><article class="rev reveal"><div class="rev-top"><span class="rev-av">S</span><div><b>Sherazad Lamari</b><small>Local Guide · 18 avis</small></div><span class="rev-g">G</span></div><div class="rev-stars"><svg viewBox="0 0 24 24"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></div><p class="rev-theme">Équipe · Qualité de service</p><small class="rev-date">Juillet 2026</small><a href="https://maps.google.com/?cid=11580393845224481456" target="_blank" rel="noopener">Lire l'avis sur Google →</a></article><article class="rev reveal"><div class="rev-top"><span class="rev-av">A</span><div><b>Alain Bouazis</b><small>Client</small></div><span class="rev-g">G</span></div><div class="rev-stars"><svg viewBox="0 0 24 24"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></div><p class="rev-theme">Serveur informatique · Postes</p><small class="rev-date">Juin 2021</small><a href="https://maps.google.com/?cid=11580393845224481456" target="_blank" rel="noopener">Lire l'avis sur Google →</a></article></div>
+    </div>
+  </div>
+</section>
+<section id="partenaires">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="tag">Nos partenaires</span>
+      <h2>Les plus grandes marques <span>du secteur</span></h2>
+    </div>
+    <div class="marquee reveal" aria-label="Nos marques partenaires">
+      <div class="marquee-track"><div class="plogo"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/Dell_logo_2016.svg/330px-Dell_logo_2016.svg.png" alt="Dell" loading="lazy" onerror="this.parentNode.innerHTML='<span>Dell</span>'"></div>
+      <div class="plogo"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/HP_logo_2012.svg/330px-HP_logo_2012.svg.png" alt="HP" loading="lazy" onerror="this.parentNode.innerHTML='<span>HP</span>'"></div>
+      <div class="plogo"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Lenovo_logo_2015.svg/330px-Lenovo_logo_2015.svg.png" alt="Lenovo" loading="lazy" onerror="this.parentNode.innerHTML='<span>Lenovo</span>'"></div>
+      <div class="plogo"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Acer_Logo.svg/330px-Acer_Logo.svg.png" alt="Acer" loading="lazy" onerror="this.parentNode.innerHTML='<span>Acer</span>'"></div>
+      <div class="plogo"><img src="https://cdn.simpleicons.org/asus/000000" alt="Asus" loading="lazy" onerror="this.parentNode.innerHTML='<span>Asus</span>'"></div>
+      <div class="plogo"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Toshiba_logo.svg/330px-Toshiba_logo.svg.png" alt="Toshiba" loading="lazy" onerror="this.parentNode.innerHTML='<span>Toshiba</span>'"></div>
+      <div class="plogo"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/330px-Apple_logo_black.svg.png" alt="Apple" loading="lazy" onerror="this.parentNode.innerHTML='<span>Apple</span>'"></div>
+      <div class="plogo"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/Canon_logo.svg/330px-Canon_logo.svg.png" alt="Canon" loading="lazy" onerror="this.parentNode.innerHTML='<span>Canon</span>'"></div>
+      <div class="plogo"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Ricoh_logo_2012.svg/330px-Ricoh_logo_2012.svg.png" alt="Ricoh" loading="lazy" onerror="this.parentNode.innerHTML='<span>Ricoh</span>'"></div>
+      <div class="plogo"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/Kyocera_logo.svg/330px-Kyocera_logo.svg.png" alt="Kyocera" loading="lazy" onerror="this.parentNode.innerHTML='<span>Kyocera</span>'"></div>
+      <div class="plogo"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Logo_Konica_Minolta.svg/330px-Logo_Konica_Minolta.svg.png" alt="Konica Minolta" loading="lazy" onerror="this.parentNode.innerHTML='<span>Konica Minolta</span>'"></div>
+      <div class="plogo"><img src="https://eu-images.contentstack.com/v3/assets/bltf71509075170d653/blt3a3f056fbba9093a/69c3c04bcd7376427266960d/DEVELOP_Logo_red_and_black.svg" alt="Develop" loading="lazy"></div>
+      <div class="plogo"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Lexmark-primary-logo.svg/330px-Lexmark-primary-logo.svg.png" alt="Lexmark" loading="lazy" onerror="this.parentNode.innerHTML='<span>Lexmark</span>'"></div>
+      <div class="plogo"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/Panasonic_logo_%28Blue%29.svg/330px-Panasonic_logo_%28Blue%29.svg.png" alt="Panasonic" loading="lazy" onerror="this.parentNode.innerHTML='<span>Panasonic</span>'"></div>
+      <div class="plogo"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Philips_logo.svg/330px-Philips_logo.svg.png" alt="Philips" loading="lazy" onerror="this.parentNode.innerHTML='<span>Philips</span>'"></div>
+      <div class="plogo"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Cisco_logo.svg/330px-Cisco_logo.svg.png" alt="Cisco" loading="lazy" onerror="this.parentNode.innerHTML='<span>Cisco</span>'"></div>
+      <div class="plogo"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Logitech_Logo_2012.svg/330px-Logitech_Logo_2012.svg.png" alt="Logitech" loading="lazy" onerror="this.parentNode.innerHTML='<span>Logitech</span>'"></div>
+      <div class="plogo"><img src="https://www.yealink.com/public/images/yealink_logo.png" alt="Yealink" loading="lazy"></div>
+      <div class="plogo"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Gigaset_Communications_logo.svg/330px-Gigaset_Communications_logo.svg.png" alt="Gigaset" loading="lazy" onerror="this.parentNode.innerHTML='<span>Gigaset</span>'"></div>
+      <div class="plogo"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Alcatel_Lucent_Enterprise_Logo.svg/330px-Alcatel_Lucent_Enterprise_Logo.svg.png" alt="Alcatel-Lucent" loading="lazy" onerror="this.parentNode.innerHTML='<span>Alcatel-Lucent</span>'"></div>
+      <div class="plogo"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Hikvision_logo.svg/330px-Hikvision_logo.svg.png" alt="Hikvision" loading="lazy" onerror="this.parentNode.innerHTML='<span>Hikvision</span>'"></div>
+      <div class="plogo"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Dahua_Technology_logo.svg/330px-Dahua_Technology_logo.svg.png" alt="Dahua" loading="lazy" onerror="this.parentNode.innerHTML='<span>Dahua</span>'"></div>
+      <div class="plogo"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Grenke_Logo_2019.svg/330px-Grenke_Logo_2019.svg.png" alt="Grenke" loading="lazy" onerror="this.parentNode.innerHTML='<span>Grenke</span>'"></div>
+      <div class="plogo"><img src="https://www.locam.fr/wp-content/uploads/2024/10/GROUPE-LOCAM-1.svg" alt="Locam" loading="lazy"></div>
+      <div class="plogo"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/Dell_logo_2016.svg/330px-Dell_logo_2016.svg.png" alt="Dell" loading="lazy" aria-hidden="true" onerror="this.parentNode.innerHTML='<span>Dell</span>'"></div>
+      <div class="plogo"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/HP_logo_2012.svg/330px-HP_logo_2012.svg.png" alt="HP" loading="lazy" aria-hidden="true" onerror="this.parentNode.innerHTML='<span>HP</span>'"></div>
+      <div class="plogo"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Lenovo_logo_2015.svg/330px-Lenovo_logo_2015.svg.png" alt="Lenovo" loading="lazy" aria-hidden="true" onerror="this.parentNode.innerHTML='<span>Lenovo</span>'"></div>
+      <div class="plogo"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Acer_Logo.svg/330px-Acer_Logo.svg.png" alt="Acer" loading="lazy" aria-hidden="true" onerror="this.parentNode.innerHTML='<span>Acer</span>'"></div>
+      <div class="plogo"><img src="https://cdn.simpleicons.org/asus/000000" alt="Asus" loading="lazy" aria-hidden="true" onerror="this.parentNode.innerHTML='<span>Asus</span>'"></div>
+      <div class="plogo"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Toshiba_logo.svg/330px-Toshiba_logo.svg.png" alt="Toshiba" loading="lazy" aria-hidden="true" onerror="this.parentNode.innerHTML='<span>Toshiba</span>'"></div>
+      <div class="plogo"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/330px-Apple_logo_black.svg.png" alt="Apple" loading="lazy" aria-hidden="true" onerror="this.parentNode.innerHTML='<span>Apple</span>'"></div>
+      <div class="plogo"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/Canon_logo.svg/330px-Canon_logo.svg.png" alt="Canon" loading="lazy" aria-hidden="true" onerror="this.parentNode.innerHTML='<span>Canon</span>'"></div>
+      <div class="plogo"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Ricoh_logo_2012.svg/330px-Ricoh_logo_2012.svg.png" alt="Ricoh" loading="lazy" aria-hidden="true" onerror="this.parentNode.innerHTML='<span>Ricoh</span>'"></div>
+      <div class="plogo"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/Kyocera_logo.svg/330px-Kyocera_logo.svg.png" alt="Kyocera" loading="lazy" aria-hidden="true" onerror="this.parentNode.innerHTML='<span>Kyocera</span>'"></div>
+      <div class="plogo"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Logo_Konica_Minolta.svg/330px-Logo_Konica_Minolta.svg.png" alt="Konica Minolta" loading="lazy" aria-hidden="true" onerror="this.parentNode.innerHTML='<span>Konica Minolta</span>'"></div>
+      <div class="plogo"><img src="https://eu-images.contentstack.com/v3/assets/bltf71509075170d653/blt3a3f056fbba9093a/69c3c04bcd7376427266960d/DEVELOP_Logo_red_and_black.svg" alt="Develop" loading="lazy" aria-hidden="true"></div>
+      <div class="plogo"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Lexmark-primary-logo.svg/330px-Lexmark-primary-logo.svg.png" alt="Lexmark" loading="lazy" aria-hidden="true" onerror="this.parentNode.innerHTML='<span>Lexmark</span>'"></div>
+      <div class="plogo"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/Panasonic_logo_%28Blue%29.svg/330px-Panasonic_logo_%28Blue%29.svg.png" alt="Panasonic" loading="lazy" aria-hidden="true" onerror="this.parentNode.innerHTML='<span>Panasonic</span>'"></div>
+      <div class="plogo"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Philips_logo.svg/330px-Philips_logo.svg.png" alt="Philips" loading="lazy" aria-hidden="true" onerror="this.parentNode.innerHTML='<span>Philips</span>'"></div>
+      <div class="plogo"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Cisco_logo.svg/330px-Cisco_logo.svg.png" alt="Cisco" loading="lazy" aria-hidden="true" onerror="this.parentNode.innerHTML='<span>Cisco</span>'"></div>
+      <div class="plogo"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Logitech_Logo_2012.svg/330px-Logitech_Logo_2012.svg.png" alt="Logitech" loading="lazy" aria-hidden="true" onerror="this.parentNode.innerHTML='<span>Logitech</span>'"></div>
+      <div class="plogo"><img src="https://www.yealink.com/public/images/yealink_logo.png" alt="Yealink" loading="lazy" aria-hidden="true"></div>
+      <div class="plogo"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Gigaset_Communications_logo.svg/330px-Gigaset_Communications_logo.svg.png" alt="Gigaset" loading="lazy" aria-hidden="true" onerror="this.parentNode.innerHTML='<span>Gigaset</span>'"></div>
+      <div class="plogo"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Alcatel_Lucent_Enterprise_Logo.svg/330px-Alcatel_Lucent_Enterprise_Logo.svg.png" alt="Alcatel-Lucent" loading="lazy" aria-hidden="true" onerror="this.parentNode.innerHTML='<span>Alcatel-Lucent</span>'"></div>
+      <div class="plogo"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Hikvision_logo.svg/330px-Hikvision_logo.svg.png" alt="Hikvision" loading="lazy" aria-hidden="true" onerror="this.parentNode.innerHTML='<span>Hikvision</span>'"></div>
+      <div class="plogo"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Dahua_Technology_logo.svg/330px-Dahua_Technology_logo.svg.png" alt="Dahua" loading="lazy" aria-hidden="true" onerror="this.parentNode.innerHTML='<span>Dahua</span>'"></div>
+      <div class="plogo"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Grenke_Logo_2019.svg/330px-Grenke_Logo_2019.svg.png" alt="Grenke" loading="lazy" aria-hidden="true" onerror="this.parentNode.innerHTML='<span>Grenke</span>'"></div>
+      <div class="plogo"><img src="https://www.locam.fr/wp-content/uploads/2024/10/GROUPE-LOCAM-1.svg" alt="Locam" loading="lazy" aria-hidden="true"></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="tag">Contact</span>
+      <h2>Parlons de <span>votre projet</span></h2>
+      <p>Devis gratuit et sans engagement, réponse sous 24h ouvrées.</p>
+    </div>
+    <div class="tabs">
+      <button class="tab active" data-panel="devis">Demander un devis</button>
+      <button class="tab" data-panel="rdv">Prendre rendez-vous</button>
+    </div>
+    <div class="contact-grid">
+      <div>
+        <!-- FORMULAIRE DEVIS — remplacez VOTRE_ID par votre identifiant Formspree (voir LISEZMOI.txt) -->
+        <form class="form-panel active" id="devis" action="https://formsubmit.co/ajax/direction@lesbureauticiens.com" method="POST">
+          <input type="hidden" name="_subject" value="Nouvelle demande de devis — site web"><input type="hidden" name="_template" value="table"><input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+          <div class="row">
+            <div class="field"><label for="d-nom">Nom complet *</label><input id="d-nom" name="nom" required></div>
+            <div class="field"><label for="d-soc">Société</label><input id="d-soc" name="societe"></div>
+          </div>
+          <div class="row">
+            <div class="field"><label for="d-mail">Email *</label><input id="d-mail" type="email" name="email" required></div>
+            <div class="field"><label for="d-tel">Téléphone *</label><input id="d-tel" type="tel" name="telephone" required></div>
+          </div>
+          <div class="field"><label>Domaines concernés</label>
+            <div class="checkgroup">
+              <label><input type="checkbox" name="domaines[]" value="Sécurité des biens et des personnes">Sécurité</label>
+              <label><input type="checkbox" name="domaines[]" value="Téléphonie, réseau d'entreprise & câblage">Téléphonie & Réseaux</label>
+              <label><input type="checkbox" name="domaines[]" value="Solutions IT">Solutions IT</label>
+              <label><input type="checkbox" name="domaines[]" value="Multimédia">Multimédia</label>
+              <label><input type="checkbox" name="domaines[]" value="Impression & GED">Impression & GED</label>
+              <label><input type="checkbox" name="domaines[]" value="Équipements point de vente">Point de vente</label>
+              <label><input type="checkbox" name="domaines[]" value="Communication">Communication</label>
+            </div>
+          </div>
+          <div class="field"><label for="d-form">Formule souhaitée</label>
+            <select id="d-form" name="formule"><option>Je ne sais pas encore</option><option>Achat</option><option>Location</option><option>Maintenance</option></select></div>
+          <div class="field"><label for="d-msg">Votre besoin *</label><textarea id="d-msg" name="message" required placeholder="Nombre de postes, matériel actuel, délais…"></textarea></div>
+          <button class="btn btn-primary" type="submit">Envoyer ma demande de devis</button>
+          <p class="note">Vos données restent confidentielles et servent uniquement à vous recontacter.</p>
+          <div class="form-ok">Merci ! Votre demande a bien été envoyée, nous revenons vers vous sous 24h.</div>
+        </form>
+
+        <!-- FORMULAIRE RENDEZ-VOUS -->
+        <form class="form-panel" id="rdv" action="https://formsubmit.co/ajax/direction@lesbureauticiens.com" method="POST">
+          <input type="hidden" name="_subject" value="Nouvelle demande de rendez-vous — site web"><input type="hidden" name="_template" value="table"><input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+          <div class="row">
+            <div class="field"><label for="r-nom">Nom complet *</label><input id="r-nom" name="nom" required></div>
+            <div class="field"><label for="r-soc">Société</label><input id="r-soc" name="societe"></div>
+          </div>
+          <div class="row">
+            <div class="field"><label for="r-mail">Email *</label><input id="r-mail" type="email" name="email" required></div>
+            <div class="field"><label for="r-tel">Téléphone *</label><input id="r-tel" type="tel" name="telephone" required></div>
+          </div>
+          <div class="row">
+            <div class="field"><label for="r-date">Date souhaitée *</label><input id="r-date" type="date" name="date" required></div>
+            <div class="field"><label for="r-cr">Créneau *</label>
+              <select id="r-cr" name="creneau" required><option value="">Choisir…</option><option>08h – 10h</option><option>10h – 12h</option><option>14h – 16h</option><option>16h – 18h</option></select></div>
+          </div>
+          <div class="field"><label for="r-type">Type de rendez-vous</label>
+            <select id="r-type" name="type"><option>Dans nos locaux (Paris 12e)</option><option>Dans vos locaux</option><option>Par téléphone</option><option>En visioconférence</option></select></div>
+          <div class="field"><label for="r-msg">Objet du rendez-vous</label><textarea id="r-msg" name="message"></textarea></div>
+          <button class="btn btn-primary" type="submit">Demander ce rendez-vous</button>
+          <p class="note">Du lundi au vendredi de 8h à 18h, le samedi sur rendez-vous. Nous vous confirmons le créneau par téléphone ou email.</p>
+          <div class="form-ok">Merci ! Nous vous recontactons rapidement pour confirmer votre rendez-vous.</div>
+        </form>
+      </div>
+
+      <aside class="info">
+        <h3>Nos coordonnées</h3>
+        <div class="info-item"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><div><small>Adresse</small>23 avenue de Saint-Mandé<br>75012 Paris — Métro Picpus (ligne 6)</div></div>
+        <div class="info-item"><svg viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg><div><small>Téléphone</small><a href="tel:+33143424192">01 43 42 41 92</a><br><a href="tel:+33769961219">07 69 96 12 19</a></div></div>
+        <div class="info-item"><svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg><div><small>Email</small><a href="mailto:direction@lesbureauticiens.com">direction@lesbureauticiens.com</a></div></div>
+        <div class="info-item"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg><div><small>Horaires</small>Lun – Ven : 8h00 – 18h00<br>Samedi : sur rendez-vous</div></div>
+      </aside>
+    </div>
+
+    <div class="agency reveal"><figure class="agency-photo"><img src="assets/agence-devanture.jpg" alt="Devanture de l'agence Les Bureauticiens, 23 avenue de Saint-Mandé à Paris" loading="lazy"><figcaption><b>Notre agence</b>23 avenue de Saint-Mandé · Paris 12e · Métro Picpus</figcaption></figure><div class="map">
+      <iframe title="Plan d'accès Les Bureauticiens" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        src="https://maps.google.com/maps?q=23%20Avenue%20de%20Saint-Mand%C3%A9%2C%2075012%20Paris&z=16&output=embed"></iframe>
+    </div></div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-logo"><img src="assets/logo-blanc.png" alt="Les Bureauticiens"></div>
+        <p>Votre partenaire unique pour l'équipement numérique des entreprises : achat, location et maintenance.</p>
+      </div>
+      <div><h4>Nos solutions</h4><ul><li><a href="securite.html">Sécurité des biens et des personnes</a></li><li><a href="telephonie-reseaux.html">Téléphonie, réseau d'entreprise &amp; câblage</a></li><li><a href="solutions-it.html">Solutions IT</a></li><li><a href="multimedia.html">Multimédia</a></li><li><a href="impression-ged.html">Impression &amp; GED</a></li><li><a href="point-de-vente.html">Équipements point de vente</a></li><li><a href="communication.html">Communication</a></li></ul></div>
+      <div><h4>Nos formules</h4><ul><li><a href="achat.html">Achat</a></li><li><a href="location.html">Location</a></li><li><a href="maintenance.html">Maintenance</a></li></ul>
+        <h4 style="margin-top:22px">Contact</h4>
+        <ul><li>23 av. de Saint-Mandé, 75012 Paris</li><li><a href="tel:+33143424192">01 43 42 41 92</a></li><li><a href="mailto:direction@lesbureauticiens.com">direction@lesbureauticiens.com</a></li></ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span id="y"></span> LES BUREAUTICIENS · SAS au capital de 85 500 € · RCS de Paris · SIRET 832 147 409 00029</span>
+      <span><a href="mentions-legales.html">Mentions légales</a> · <a href="mentions-legales.html#confidentialite">Politique de confidentialité</a></span>
+    </div>
   </div>
 </footer>
 
-<div class="mbar" id="mbar">
-  <a class="btn btn-ghost" href="tel:+33143424192"><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg>Appeler</a>
-  <a class="btn btn-primary" href="#devis">Devis gratuit</a>
-</div>
-
-<script src="script.js"></script>
+<script>
+document.getElementById('y').textContent=new Date().getFullYear();
+// Onglets devis / rendez-vous
+function showPanel(id){
+  document.querySelectorAll('.tab').forEach(t=>t.classList.toggle('active',t.dataset.panel===id));
+  document.querySelectorAll('.form-panel').forEach(f=>f.classList.toggle('active',f.id===id));
+}
+document.querySelectorAll('.tab').forEach(t=>t.addEventListener('click',()=>showPanel(t.dataset.panel)));
+document.querySelectorAll('[data-tab]').forEach(a=>a.addEventListener('click',()=>{showPanel(a.dataset.tab);document.querySelector('.nav ul').classList.remove('open')}));
+document.querySelectorAll('.nav ul a').forEach(a=>a.addEventListener('click',()=>document.querySelector('.nav ul').classList.remove('open')));
+// Date minimale = aujourd'hui
+document.getElementById('r-date').min=new Date().toISOString().split('T')[0];
+// Envoi des formulaires sans quitter la page
+document.querySelectorAll('form').forEach(f=>f.addEventListener('submit',async e=>{
+  e.preventDefault();
+  const btn=f.querySelector('button');btn.disabled=true;btn.textContent='Envoi…';
+  try{
+    const r=await fetch(f.action,{method:'POST',body:new FormData(f),headers:{Accept:'application/json'}});
+    if(!r.ok)throw 0;
+    f.reset();f.querySelector('.form-ok').style.display='block';btn.textContent='Envoyé ✓';
+  }catch(_){btn.disabled=false;btn.textContent='Réessayer';alert("L'envoi a échoué. Appelez-nous au 01 43 42 41 92 ou écrivez à direction@lesbureauticiens.com.");}
+}));
+// Animations d'apparition
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+<script src="search-index.js"></script>
+<script src="site.js"></script>
 </body>
 </html>

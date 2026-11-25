@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="9 5 119 130" role="img" aria-label="Les Bureauticiens">
+  <path fill="#1a9fe0" d="M13 8 L27 22 V119 H62 L75 132 H13 Z"/>
+  <g fill="#4a4f57">
+    <path d="M42 22 H57 V102 L42 88 Z"/>
+    <path d="M57 22 H93 A25 25 0 0 1 93 72 H86 L81 66 H93 A15.5 15.5 0 0 0 93 35 H57 Z"/>
+    <path d="M57 66 H73 L84 80 H76 L67 70 H57 Z"/>
+    <path d="M84 72 H95 A29.5 29.5 0 0 1 95 131 H86 L75 120 H95 A17 17 0 0 0 95 86 H92 Z"/>
+  </g>
+</svg>
