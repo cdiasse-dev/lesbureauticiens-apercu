@@ -1086,3 +1086,80 @@ html.uni-open .fab{opacity:0;pointer-events:none}
   .card,.sol-card,.sector,.ben,.item,.faq,.plogo{border-color:#555}
   .btn-outline{border-width:2px}
 }
+
+/* ============================================================
+   MOBILE — reprise de l'expérience sur téléphone
+   ============================================================ */
+/* Le monogramme de fond garde toujours ses proportions */
+.hero .lb-fond{object-fit:contain}
+h1,h2,h3,h4{text-wrap:balance}
+p{text-wrap:pretty}
+
+@media (max-width:760px){
+  html{-webkit-text-size-adjust:100%}
+  a,button{-webkit-tap-highlight-color:transparent}
+  input,select,textarea{font-size:16px !important} /* évite le zoom automatique d'iOS */
+
+  section{padding:52px 0 56px}
+  #solutions{padding:52px 0}
+  .section-head{margin-bottom:28px}
+
+  /* Accueil : LB en filigrane derrière les hexagones, non déformé */
+  .hero{padding:34px 0 48px}
+  .hero-grid{gap:26px}
+  .hero .lb-fond{top:auto;bottom:70px;left:50%;height:auto;width:min(96%,430px);max-width:none;transform:translateX(-50%);opacity:.2}
+  .hero h1{font-size:clamp(2.1rem,10.5vw,2.9rem);line-height:1.02}
+  .hero .lead{font-size:1rem;line-height:1.6}
+  .hero-actions{flex-direction:column;gap:10px}
+  .hero-actions .btn{width:100%;text-align:center;justify-content:center;padding:15px 20px}
+  .slogan{font-size:1.05rem;margin-top:14px}
+
+  /* Nos solutions : 2 colonnes au lieu d'une longue pile */
+  .bubbles{gap:30px 14px}
+  .bubbles .bubble,.bubbles .bubble:nth-child(5){flex-basis:calc(50% - 7px);min-width:0}
+  .bubble .hexbig{width:min(100%,150px);height:auto}
+  .bubble h3{font-size:1.08rem;line-height:1.15;margin-top:12px}
+  .bubble p{font-size:.7rem;line-height:1.45}
+  .bubble .num{left:calc(50% - 77px);top:-6px;width:32px;height:32px;border-width:2px;font-size:1.1rem}
+
+  /* Formules : cartes plus compactes */
+  .offers-grid{gap:16px}
+  .offer-img{height:130px;margin-bottom:14px}
+  .offer>*:not(.offer-img){margin-left:20px;margin-right:20px}
+  .offer .num{font-size:2.2rem;line-height:1}
+  .offer h3{font-size:1.6rem;margin:2px 0 6px}
+  .offer p{margin-bottom:14px}
+  .offer .go{margin:0 20px 20px}
+
+  /* Méthode : 2 colonnes */
+  .steps{gap:18px}
+  .process .step-media{aspect-ratio:16/9}
+
+  /* Équipe : 2 par ligne */
+  .team>.container{display:flex;flex-wrap:wrap;justify-content:center;gap:28px 16px}
+  .team>.container>.section-head,.team>.container>.team-lead{flex:0 0 100%}
+  .team-row:not(.team-lead){display:contents}
+  .team-row:not(.team-lead) .tm{width:calc(50% - 8px)}
+  .team-row:not(.team-lead) .tm img{width:128px;height:128px}
+  .team-row:not(.team-lead) .tm figcaption b{font-size:1rem}
+  .team-row:not(.team-lead) .tm figcaption span{font-size:.78rem}
+
+  .agency .map{height:260px}
+
+  /* Pied de page : liens sur 2 colonnes */
+  .foot-grid{grid-template-columns:1fr 1fr;gap:28px 18px}
+  .foot-grid>div:first-child{grid-column:1/-1}
+  .foot-grid a,.foot-grid li,.foot-grid p{overflow-wrap:anywhere}
+  /* Le bouton « Devis » flottant s'efface quand le formulaire est à l'écran */
+  .fab .fab-devis{transition:opacity .2s,transform .2s}
+  .fab.sur-contact .fab-devis{opacity:0;transform:scale(.9);pointer-events:none}
+  .contact form .btn{width:100%;justify-content:center;text-align:center}
+  footer{padding-bottom:84px} /* laisse la place aux boutons flottants */
+
+  /* Boutons flottants : deux seulement, plus discrets, hors de la zone de geste */
+  .fab{right:14px;bottom:calc(14px + env(safe-area-inset-bottom));gap:10px}
+  .fab .fab-top{display:none}
+}
+@media (max-width:380px){
+  .bubble h3{font-size:1rem}
+}

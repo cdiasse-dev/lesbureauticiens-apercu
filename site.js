@@ -382,3 +382,8 @@
   }
   tick();
 })();
+
+// Mobile : masque le bouton flottant « Devis » quand le formulaire de contact est visible
+(function(){var c=document.getElementById('contact'),f=document.querySelector('.fab');
+  if(!c||!f||!('IntersectionObserver' in window))return;
+  new IntersectionObserver(function(es){f.classList.toggle('sur-contact',es[0].isIntersecting);},{rootMargin:'-20% 0px -20% 0px'}).observe(c);})();
